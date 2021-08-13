@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kindergarten</title>
+    <link rel="stylesheet" href="/CSS/main.css">
+
+
+    <head>
+
+
+    </head>
+
+<body>
+    <header>
+
+
+    </header>
+    <main>
+
+        <div>
+           
+
+            <div class="w3-content w3-section" style="max-width:900px">
+                <img class="mySlides" src="img/5fac855e0b276.image.jpg" style="width:100%">
+                <img class="mySlides" src="img/covid-classrooms.jpg" style="width:100%">
+                <img class="mySlides" src="img/Fotolia_116354030_S.jpg" style="width:100%">
+            </div>
+           
+
+            <script>
+                var myIndex = 0;
+                carousel();
+
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 2000); // Change image every 2 seconds
+                }
+            </script>
+        </div>
+        <section id="gen`">
+        <div id="loc">
+            <p> FIND A LOCATION ?</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27116.926675033057!2d35.965180429615216!3d31.835453331226823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f96539bcc23%3A0x83d61bcf8e637e6d!2z2YLZhNi52Kkg2LnZhdin2YY!5e0!3m2!1sar!2sjo!4v1628781947227!5m2!1sar!2sjo"
+                width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div id="example1">
+           <h3 id="pa">
+                When comparing daycare centers and childcare facilities, it is easy to see the many
+                differences in our approach, curricula, and dedication. By maintaining the highest standards and making
+                continuous improvements, Kids ‘R’ Kids Learning Academies positively impact the vast number of families
+                and
+                children whom we serve. </h3>
+          </div>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+body {
+    background-color: #C2F784;
+}
+.mySlides {
+    display: none;
+}
+#example1 {
+    width: 500px;
+    height: 350px;
+    background: url() left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(/img/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg) left top repeat;
+    padding: 15px , 90px;
+    background-size: 50px, 80px, auto;
+    
+      font: italic 1.2em "Fira Sans", serif;
+      color: #B85C38;
+      
+  }
+  main {
+    padding: 20px;
+    border-radius: 30px;
+    width: 960px;
+    margin: auto;
+    
+}
+#loc {
+    float: right;
+} 
+.pa {
+    margin: auto;
+    padding: 30px , 30px;
+}
+  
+  
