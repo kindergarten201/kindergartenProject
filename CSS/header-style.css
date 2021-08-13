@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+header {
+    width: 1080px;
+    /* height: 300px; */
+    margin: 50px auto;
+    overflow: hidden;
+    background-color: #FFF338;
+}
+
+input {
+    position: absolute;
+    display: none
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu {
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    border-radius: 70px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+    color: #FFF338;
+}
+
+.btn {
+    background-color: #FF67E7;
+    ;
+    font-size: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.btn:not(:first-child) {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: -2;
+    -webkit-transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+    transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
+}
+
+.btn:nth-child(2) {
+    top: 0px;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s
+}
+
+.btn:nth-child(3) {
+    top: 0px;
+    left: 0px;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s
+}
+
+.btn:nth-child(4) {
+    left: 0px;
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s
+}
+
+.btn:nth-child(5) {
+    top: 0px;
+    left: 0px;
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s
+}
+
+.btn:nth-child(6) {
+    top: 0px;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(2) {
+    left: 150px;
+    background-color: #FF67E7;
+    opacity: 0.7;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(3) {
+    background-color: #FF67E7;
+    opacity: 0.7;
+    top: 100px;
+    left: 100px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(4) {
+    background-color: #FF67E7;
+    opacity: 0.7;
+    top: 150px;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(5) {
+    top: 100px;
+    left: -100px;
+    background-color: #FF67E7;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(6) {
+    left: -150px;
+    background-color: #FF67E7;
+    opacity: 0.9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+.menuBtn, .closeBtn {
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.closeBtn {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+input#toggle:checked~#show-menu .btn .menuBtn {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+input#toggle:checked~#show-menu .btn .closeBtn {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+#header {
+    width: 1000px;
+    /* height: 500px; */
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 100px 800px 50px;
+}
+
+#h {
+    border: white inset 3px;
+    border-radius: 50px;
+}
+
+#header img, h1 {
+    display: inline-block;
+}
+
+#logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+h1 {
+    font-family: Modak;
+    font-weight: normal;
+    margin: 0px 50px;
+    color: #FF67E7;
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+.btn img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes float {
+    0% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+        transform: translatey(0px);
+    }
+    50% {
+        /* box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2); */
+        transform: translatey(-20px);
+    }
+    100% {
+        /* box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6); */
+        transform: translatey(0px);
+    }
+}
+
+#logo {
+    /* width: 150px;
+	height: 150px; */
+    box-sizing: border-box;
+    border: 5px white solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+    animation: float 3s ease-in-out infinite;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(1) {
+    animation: spin 10s infinite linear;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(2) {
+    animation: spin 10s infinite linear;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(3) {
+    animation: spin 10s infinite linear;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(4) {
+    animation: spin 10s infinite linear;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(5) {
+    animation: spin 10s infinite linear;
+}
+
+input#toggle:checked~#show-menu .btn:nth-child(6) {
+    animation: spin 10s infinite linear;
+}
+
+/*///////////////////////// h1 animation ///////////////////////////////////*/
+
+.words {
+    margin-left: 50px;
+    color: #FF67E7;
+    font-size: 0;
+    line-height: 1;
+    display: inline-block;
+}
+
+.words span {
+    font-size: 3rem;
+    display: inline-block;
+    animation: move 5s ease-in-out infinite;
+    font-family: Modak;
+    font-weight: normal;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(-30%, 0);
+    }
+    100% {
+        transform: translate(30%, 0);
+    }
+}
+
+.words span:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.words span:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.words span:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.words span:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.words span:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+.words span:nth-child(7) {
+    animation-delay: 3s;
+}
+
+.words span:nth-child(8) {
+    animation-delay: 3.5s;
+}
+
+.words span:nth-child(9) {
+    animation-delay: 4s;
+}
+
+.words span:nth-child(1) {
+    animation-delay: 4.5s;
+}
+
+
+.words span:nth-child(11) {
+    animation-delay: 5s;
+}
