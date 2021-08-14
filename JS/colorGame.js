@@ -17,6 +17,10 @@ let rightImage = document.getElementById('right');
 let ques= document.getElementById('question');
 let nameee=0;
 let k=[];
+let middleRandom;
+let rightRandom;
+let leftRandom;
+       
 
 function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
@@ -36,9 +40,8 @@ for( let i = 0; i < colorArr.length; i++ ) {
 console.log( Color.all );
 
 function render() {
-      let middleRandom = random(0, (colorArr.length - 1));
-      let rightRandom;
-      let leftRandom;
+      middleRandom = random(0, (colorArr.length - 1));
+      
        
   do {
     leftRandom   = random(0, (colorArr.length - 1));
@@ -54,13 +57,12 @@ function render() {
 
   let k=[leftRandom, middleRandom, rightRandom];
 
-  for(let i=0; i<3; i++){
-    console.log(k[i])
+  let i=random(0, 2);
     nameee=colorArr[k[i]].split( '.' )[0];
     ques.textContent= ` which one is the color ${nameee} ?`
-  }
   
-    //console.log(ques);
+  
+    //console.log(nameee);
 
     
     
@@ -75,16 +77,40 @@ render();
 
 imageSection.addEventListener( 'click', clicker );
 function clicker( event ) {
-  if( (( event.target.id === 'left' || event.target.id === 'middle' ||  event.target.id === 'right')) ) {
-        render();
-  } 
+  console.log(nameee)
+  console.log(Color.all[middleRandom].name)
+  console.log(Color.all[rightRandom].name)
+  console.log(Color.all[leftRandom].name)
 
-}
+   if( (( event.target.id === 'left' && nameee===Color.all[leftRandom].name ))){
+    Swal.fire(
+      'Good job!',
+      'You Got The Right Answer!',
+      'success');
+      render();
+   }
+  
+   else if(((event.target.id === 'middle' && nameee===Color.all[middleRandom].name)) ){
+    Swal.fire(
+      'Good job!',
+      'You Got The Right Answer!',
+      'success');
+      render();
+   }
+   
+  else if(((event.target.id === 'right' && nameee===Color.all[rightRandom].name ))){
+    Swal.fire(
+      'Good job!',
+      'You Got The Right Answer!',
+      'success');
+      render();
+  }
+        else {
+          Swal.fire(
+            'Try Again',
+            'You Got The Wrong Answer!',
+            'error');
+        }
+   } 
 
-
-
-
-
-
-
-
+  

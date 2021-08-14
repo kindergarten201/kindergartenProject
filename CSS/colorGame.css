@@ -13,9 +13,41 @@ p {
     width: 100%;
     margin: auto;
     padding: 30px;
-    font-size: 90px;
+    font-size: 75px;
+    font-family: 'Modak', cursive;
 }
-img {
+main img {
     height: 350px;
     width: 350px;
+    border-style: groove;
 }
+
+#box {
+    position: relative;
+      margin: 20px auto;
+      width: 500px;
+      height: 300px;
+  }
+  
+  .the-fish {
+    position: relative;
+    height: 50px;
+    width: auto;
+    top: 15%;
+    -webkit-animation:fly-turn .5s linear infinite, go-left-right 4s infinite alternate;
+    -moz-animation:fly-turn .5s linear infinite, go-left-right 4s infinite alternate;
+     animation:fly-turn .5s linear infinite, go-left-right 4s infinite alternate;
+    
+  }
+  .ball {
+    height: 160px;
+  }
+  @-moz-keyframes fly-turn { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes fly-turn { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes fly-turn { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  @keyframes go-left-right {
+      from { left: 0px;}   
+      to { left: calc(100% - 100px);} 
+
+    
+
