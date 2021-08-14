@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
 
-
+a{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0.411);
+}
 
 #footerSection {
     width: 1080px;
@@ -12,6 +15,8 @@
     grid-template-rows: 1fr 2px 1fr;
     border: white inset 3px;
     border-radius: 50px;
+    color: rgba(255, 0, 0, 0.411);
+    font-family: cursive;
 }
 
 #footer-logo {

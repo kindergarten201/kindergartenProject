@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap');
+.wrapper {
+    --color: #1f242d;
+    --color-invert: #fff;
+    --clip-path: circle(15px at left);
+    --clip-path-hover: circle(150px at left);
+    --clip-path-clicked: circle(700px at top);
+    --duration: 0.4s;
+    --timing-function: ease;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    display: inline-block;
+
+}
+
+.wrapper .video {
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+}
+
+.wrapper .video video {
+    position: fixed;
+    background: #c4cbde;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+
+.wrapper .text {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    opacity: var(--opacity, 1);
+    transition: opacity 0.3s var(--timing-function) 0.2s;
+}
+
+.wrapper .text::before, .wrapper .text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    right: 25px;
+    height: 0;
+}
+
+.wrapper .text::before , .links > a::before {
+    box-shadow: 26px 0 0 1px var(--color);
+    right: var(--r, 100%);
+    opacity: var(--opacity, 0);
+    transition: right 0.5s ease-in, opacity 0.1s linear;
+}
+
+.wrapper .text::after {
+    box-shadow: 26px 0 0 1px var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+}
+
+.wrapper .text>span::before, .wrapper .text>span::after {
+    content: attr(data-text);
+    padding-left: 26px;
+}
+
+.wrapper .text>span::before {
+    color: var(--color);
+}
+
+.wrapper .text>span::after {
+    color: var(--color-invert);
+    clip-path: var(--clip-path);
+    transition: clip-path var(--duration) var(--timing-function);
+    position: absolute;
+    left: 0;
+}
+
+.wrapper input {
+    width: 220px;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    border-radius: 40px;
+    outline: none;
+    z-index: 2;
+    appearance: none;
+    cursor: pointer;
+}
+
+.wrapper input:focus {
+    outline: 0;
+}
+
+.wrapper input:hover~.video {
+    clip-path: var(--clip-path-hover);
+}
+
+.wrapper input:hover~.text::before {
+    --r: 25px;
+    --opacity: 1;
+}
+
+.wrapper input:hover~.text::after {
+    clip-path: var(--clip-path-hover);
+}
+
+.wrapper input:hover~.text>span::after {
+    clip-path: var(--clip-path-hover);
+}
+
+.wrapper input:checked {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+
+.wrapper input:checked~.video {
+    top: 0;
+    left: 0;
+    clip-path: var(--clip-path-clicked);
+}
+
+.wrapper input:checked~.text {
+    --opacity: 0;
+    transition: opacity 0.3s var(--timing-function);
+}
+
+.wrapper input:checked~.text::after {
+    clip-path: var(--clip-path-clicked);
+}
+
+.wrapper input:checked~.text>span::after {
+    clip-path: var(--clip-path-clicked);
+}
+
+.sec-1, .sec-2, .sec-3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+ 
+    margin: 20px 0px;
+    gap: 20px;
+    padding: 10px;
+}
+
+.sec-1-2, .sec-2-2, .sec-3-2 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+    margin: 20px;
+}
+
+body {
+    width: 1080px;
+    margin: auto;
+    font-family: 'Indie Flower', cursive;
+}
+
+.sec-1-2>iframe, .sec-2-2>iframe, .sec-3-2>iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: #EDF4F2 3px groove;
+}
+
+.h-sec {
+    background-color: #F5A31A;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+main h3, h4, h6 {
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
+    color: #EDF4F2;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 38px;
+}
+
+.sec-1-1, .sec-2-1, .sec-3-1 {
+    border-radius: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: #EDF4F2 3px groove;
+    background-color: #79D70F;
+    padding: 50px;
+}
+.links > a {
+    color: #000;
+display: inline;
+}
