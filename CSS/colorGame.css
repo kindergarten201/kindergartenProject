@@ -1,0 +1,21 @@
+body {
+    width: 1080px ;
+    margin:auto ;
+    background-color:rgb(65, 185, 255);
+    display: grid;
+    grid-template-columns: 3;
+    gap: 100px;
+    animation: rainbow 25s infinite;
+  user-select: none;
+  
+    }
+p {
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    font-size: 90px;
+}
+img {
+    height: 350px;
+    width: 350px;
+}
