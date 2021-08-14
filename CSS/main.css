@@ -5,10 +5,11 @@ body {
     display: none;
 }
 #example1 {
-    width: 500px;
-    height: 350px;
-    background: url() left top no-repeat, url(img_flwr.gif) right bottom no-repeat, url(/img/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg) left top repeat;
-    padding: 15px , 90px;
+  margin-top: 50px;
+    width: 450px;
+    height: 300px;
+    background: url() left top no-repeat, url() right bottom no-repeat, url(/img/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg) left top repeat;
+    padding: 15px 10px;
     background-size: 50px, 80px, auto;
     
       font: italic 1.2em "Fira Sans", serif;
@@ -24,10 +25,17 @@ body {
 }
 #loc {
     float: right;
+    margin-top: -50px;
 } 
 .pa {
     margin: auto;
     padding: 30px , 30px;
+}
+p {
+    color: #B85C38;
+    font-weight: bold;
+    font-style: italic ;
+    
 }
   
   
