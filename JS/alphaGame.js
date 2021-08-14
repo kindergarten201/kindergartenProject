@@ -36,11 +36,7 @@ function genQues (){
 
 //genQues();
 
-let toGames = document.getElementById("return");
-toGames.addEventListener( 'click' , Back );
-function Back (){
-    window.location.replace('games.html');
-}
+
 
 
 sub.addEventListener( "click", addAnswer );
@@ -63,9 +59,9 @@ function addAnswer(Event){
         
         Swal.fire(
             'Try Again',
-            'You Got The Wrong Answer!',
+            'Hint: we only accept letters in this box',
             'error');
-            alert('Hint: we only accept letters in this box')
+            
     }
 
 

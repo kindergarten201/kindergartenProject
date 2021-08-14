@@ -7,6 +7,7 @@ body {
     gap: 100px;
     animation: rainbow 25s infinite;
   user-select: none;
+  
     }
 
 #question {
@@ -82,4 +83,8 @@ button {
     background-position: 0 -100%;
     transition: 1.5s ease;
     
+}
+
+#submit:hover{
+  background-position: 500% 100%;
 }
