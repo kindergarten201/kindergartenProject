@@ -146,7 +146,7 @@
     clip-path: var(--clip-path-clicked);
 }
 
-.sec-1, .sec-2, .sec-3 {
+#sec-1, .sec-2, .sec-3 {
     display: grid;
     grid-template-columns: 2fr 1fr;
  
@@ -218,9 +218,42 @@ h3 {
     border-bottom-left-radius: 10px;
     border: #EDF4F2 3px groove;
     background-color: #79D70F;
-    padding: 50px;
+    padding: 20px;
 }
 .links > a {
     color: #000;
 display: inline;
+}
+
+.img-sec{
+    margin: 20px;
+}
+.sec-1-1 h4 {
+    padding: 20px;
+}
+.sec-1-1 p {
+    padding: 10px;
+    line-height: 1.7;
+}
+.img-sec button {
+    width: 300px;
+    height: 200px;
+    margin: 10px 20px;
+    border-radius: 50px;
+    background-color: #223808;
+}
+
+.img-sec button img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+   
+}
+
+.img-sec h4{
+    display: inline-block;
+    width: 30%;
+    color:#223808 ;
+    margin: 5px 10px;
+    text-align: center;
 }
