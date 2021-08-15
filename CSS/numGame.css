@@ -47,13 +47,8 @@ div{
         border-color: orchid;
         border-style: groove;
         border-width: 20px;
-        margin-bottom: 30px;
-
-        
-    
-}
-
-
+        margin-bottom: 30px; 
+    }
 
 #results{
     background-color: none;
