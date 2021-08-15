@@ -65,12 +65,6 @@ function render() {
     //console.log(nameee);
 
     
-    
-
-  
-
-
-  
 }
 
 render();

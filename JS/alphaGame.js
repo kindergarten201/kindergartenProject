@@ -33,11 +33,7 @@ function genQues (){
      
 }}
 
-
 //genQues();
-
-
-
 
 sub.addEventListener( "click", addAnswer );
 function addAnswer(Event){
@@ -63,7 +59,6 @@ function addAnswer(Event){
             'error');
             
     }
-
 
 }
 else {

@@ -10,6 +10,7 @@ p{
     margin: auto;
     padding: 30px;
     font-size: 75px;
+    margin-top: 40px;
 }
 
 #hero {
@@ -17,6 +18,7 @@ p{
     height: 400px;
     margin: auto;
     border-radius: 3;
+    margin-bottom: 40px;
 
 }
 

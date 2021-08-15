@@ -1,15 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-    <link rel="stylesheet" href="./CSS/reset.css">
-   
+<html lang="en">   
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+        </style>
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/numGame.css">
+    <title> Numbers Game </title>
 </head>
 <body>
+    <p id="question">  What is This Number ? </p>
+    <img src="" alt="" id="numImg">
+    <div>
+    <input type="submit" value="Submit Answer" id="submit">
+    <input type="number" id="answer" name="answer" value="" placeholder="Your Answer" min="0" max="9"> 
+    </div>
+    <p id="calc"> Try Our Calculator To Practice Numbers Addition And Subtraction </p>
+   
+    
+    <section id="calculator">
+        <input type="number" id="n1"  value="" placeholder="First Num" min="0" max="9"> 
+        <br>
+        <input type="number" id="n2"  value="" placeholder="Second Num" min="0" max="9"> 
+
+        <button id="plus">+</button>
+        <button id="clear"> clear </button>
+        <button id="minus">-</button>
+        <br>
+        <p id="results"> Result </p>
+    </section>
     
 </body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
 <script src="./JS/numGame.js"></script>
 </html>
