@@ -19,4 +19,3 @@ function initMap(): void {
       map: map,
     });
   }
-   

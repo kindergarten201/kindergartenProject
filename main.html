@@ -22,14 +22,17 @@
     <main>
 
         <div>
-           
 
-            <div class="w3-content w3-section" style="max-width:900px">
-                <img class="mySlides" src="img/81553004-happy-school-kids-cartoon.jpg" style="width:100%">
+
+            <div class="w3-content w3-section" style="max-width:960px">
+                <img class="mySlides" src="img/image-from-rawpixel-id-2941697-png.png" style="width:100%">
                 <img class="mySlides" src="img/covid-classrooms.jpg" style="width:100%">
                 <img class="mySlides" src="img/iskola.jpg" style="width:100%">
+                <img class="mySlides" src="img/image-from-rawpixel-id-491519-jpeg.jpg" style="width:100%">
+                <img class="mySlides" src="img/image-from-rawpixel-id-864191-original.jpg" style="width:100%">
+                <img class="mySlides" src="img/image-from-rawpixel-id-2941700-png.png" style="width:100%">
             </div>
-           
+
 
             <script>
                 var myIndex = 0;
@@ -49,28 +52,58 @@
             </script>
         </div>
         <section id="gen`">
-        <div id="loc">
-            <p> FIND A LOCATION ?</p>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27116.926675033057!2d35.965180429615216!3d31.835453331226823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f96539bcc23%3A0x83d61bcf8e637e6d!2z2YLZhNi52Kkg2LnZhdin2YY!5e0!3m2!1sar!2sjo!4v1628781947227!5m2!1sar!2sjo"
-                width="450" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div id="example1">
-           <h3 id="pa">
-                When comparing daycare centers and childcare facilities, it is easy to see the many
-                differences in our approach, curricula, and dedication. By maintaining the highest standards and making
-                continuous improvements, Kids ‘R’ Kids Learning Academies positively impact the vast number of families
-                and
-                children whom we serve. </h3>
-          </div>
+            <div id="loc">
+                <p> FIND A LOCATION ?</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27116.926675033057!2d35.965180429615216!3d31.835453331226823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5f96539bcc23%3A0x83d61bcf8e637e6d!2z2YLZhNi52Kkg2LnZhdin2YY!5e0!3m2!1sar!2sjo!4v1628781947227!5m2!1sar!2sjo"
+                    width="450" height="330" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="example1">
+                <img  src="/img/Love-Quotes-Diana1.jpg" alt=""
+                    style="width: 450px ;height: 300px;" id="myImg">
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+           
+            <script>
+                // Get the modal
+              
+
+
+
+                var modal = document.getElementById('myModal');
+
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt;
+                }
+
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                  modal.style.display = "none";
+                }
+            </script>
         </section>
     </main>
 
     <footer>
 
+
     </footer>
-    
-    
+
+
 </body>
 
 </html>
