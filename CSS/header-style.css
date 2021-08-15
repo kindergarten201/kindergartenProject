@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-header {
+/* header {
     width: 1080px;
-    /* height: 300px; */
     margin: 50px auto;
     overflow: hidden;
     background-color: #FFF338;
-}
+} */
 
 #header input {
     position: absolute;
@@ -145,7 +144,7 @@ input#toggle:checked~#show-menu .btn .closeBtn {
 /* ///////////////////////////////// */
 #header {
     width: 1000px;
-    margin: 50px  20px;
+    margin: 30px  20px;
     display: grid;
     grid-template-columns: 100px 700px 100px;
 }
@@ -153,7 +152,12 @@ input#toggle:checked~#show-menu .btn .closeBtn {
 #h {
     border: white inset 3px;
     border-radius: 50px;
+    height: 150px;
+    width: 1080px;
+     margin: 50px auto; 
+    background-color: #FFF338;
 }
+
 
 #header img, h1 {
     display: inline-block;
