@@ -1,0 +1,57 @@
+body{
+    width: 1080px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 6;
+    gap: 40px;
+
+}
+img {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+#calc{
+    
+    font-family: 'Modak', cursive;
+    background-color: orchid;
+    border-radius: 3%;
+    font-size: 50px;
+     /* margin: auto; */
+     text-align: center;
+}
+div{
+    margin:auto;
+}
+#question{
+    margin-top: 300px;
+    font-family: 'Modak', cursive;
+    background-color: orchid;
+    border-radius: 3%;
+    font-size: 50px;
+     /* margin: auto; */
+     text-align: center;
+}
+#answer{
+    width: 100px;
+}
+
+#calculator {
+    margin-top: 100px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 50px);
+        border-color: orchid;
+        border-style: groove;
+        border-width: 20px;
+        margin-bottom: 30px; 
+    }
+
+#results{
+    background-color: none;
+    margin: auto;
+
+}
