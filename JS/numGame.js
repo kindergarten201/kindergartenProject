@@ -1,6 +1,6 @@
 'use strict'
 let numbers=['1','2','3','4','5','6','7','8','9','0'];
-let numArr=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','0.jpg'];
+let numArr=['1.jpg','2.jpg','3.jpg','4.jpg','50.jpg','6.jpg','70.jpg','8.jpg','9.jpg','0.jpg'];
 let one= document.getElementById('1');
 let two= document.getElementById('2');
 let three= document.getElementById('3');
