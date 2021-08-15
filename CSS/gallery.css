@@ -1,0 +1,104 @@
+*{
+  font-family: sans-serif;
+}
+
+.carousel-item{
+  height: 100vh;
+}
+.img-box{
+  width: 550px;
+  /* position: relative; */
+}
+
+
+.slide-one{
+  background-image: url(../img/background5.png);
+  background-size: 40%;
+}
+.carousel-item .row{
+  margin: 10% 0;
+}
+.carousel-item h1{
+  margin-top: 40px;
+  font-weight: bold;
+  color: #f43a0b;
+  animation-play-state:running;
+}
+.carousel-item p{
+  margin-top: 30px 0 50px;
+  font-size: 20px;
+  width: 500px;
+  font-weight: bold;
+}
+.slide-two{
+  background-image:url(../img/background4.png) ;
+  background-size:50%;
+}
+.slide-two h1 , .slide-two p{
+  color: blue;
+}
+/* .img-one{
+  width: 100%;
+}
+.img-two{
+  width: 200px;
+  position: absolute;
+  left:0;
+  bottom: 20px;
+}
+.img-three{
+  width: 70px;
+  position: absolute;
+  left:245px;
+  bottom: 55px;
+}
+.img-four{
+  width: 60px;
+  position: absolute;
+  right: 155px;;
+  bottom: 95px;
+}
+.img-five{
+  width: 100px;
+  position: absolute;
+  right:50px;
+  bottom: 20px;
+} */
+.checked {
+  color: orange;
+}
+.scroll{ 
+  margin-top: 50px;
+  height: 100px;
+  width: 500px;
+  overflow: scroll;
+  background-color: rgb(212, 67, 67) ;
+  padding-left: 20px;
+  padding-top: 10px;
+
+}
+.scroll h2{ color: rgb(245, 244, 179);
+font-size: 15px;
+font-weight: bold;
+text-decoration-line: underline;
+
+
+}
+.scroll h3{ 
+
+  font-size: 10px;
+}
+.scroll p{color: wheat;
+  font-size: 15px;
+}
+
+.mySlides {display:none;}
+
+.mySlides2 {display:none;}
+
+
+li {
+  display: flex;
+  float: left;
+  padding: 10px;
+}
