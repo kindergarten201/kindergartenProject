@@ -13,6 +13,10 @@ let teeth = document.getElementById('teeth');
 let image=document.getElementById('hero')
 let rounds=10;
 let nameAlone=0;
+let correct=0;
+let i=0;
+
+
 
 
 function random(min,max){
@@ -33,12 +37,18 @@ console.log( Body.all );
 
 
 function render(){
-    for (let i=0; i<rounds; i++){
+    
+    if( i<rounds  ){
     let randomImage = random(0 , partsArr.length-1);
     nameAlone=partsArr[randomImage].split( '.' )[0];
     image.src = '../img/' + Body.all[randomImage].src;
-    // console.log(nameAlone)
+    i++;
+     //console.log(i)
     // console.log(partsArr[randomImage])
+    } else if (i == rounds){
+        let user=prompt('Please Tell Me Your Name ?');
+        Swal.fire(`${user}  you Scored ${correct} Out Of ${rounds}`)
+    
 }}
 render();
 
@@ -49,16 +59,16 @@ function clicked( event ) {
         'Good job!',
         'You Got The Right Answer!',
         'success');
+        correct++;
         render();}
    else if( event.target.id != nameAlone ) {
     Swal.fire(
         'Try Again',
         'You Got The Wrong Answer!',
         'error');
-        
+        render()
    }
 }
-
 
 
 
