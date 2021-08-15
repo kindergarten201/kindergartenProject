@@ -5,10 +5,10 @@ a{
     color: rgba(255, 0, 0, 0.411);
 }
 
-#footerSection {
+#f {
     width: 1080px;
     height: 220px;
-    margin: 20px auto;
+    margin: 25px auto;
     overflow: hidden;
     background-color: #FFF338;
     display: grid;
@@ -30,13 +30,13 @@ a{
     box-shadow: 0 5px 15px 0px rgba(133, 88, 88, 0.6);
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
-    margin: 20px;
     margin: auto 20px 30px auto;
 }
 
 .footerRow1 {
     display: grid;
     grid-template-columns: 200px 1fr 1fr;
+    margin: 20px 0px;
 }
 
 form>input, label {
@@ -76,6 +76,7 @@ form>input, label {
     font-family: cursive;
     font-size: 15px;
     color: tomato;
+    margin-bottom: 10px;
 }
 @keyframes fliping {
     0% {

@@ -7,6 +7,7 @@ formMail.addEventListener('submit', subscribFun);
 function subscribFun(event) {
   event.preventDefault();
   let userEmail = event.srcElement[0].value;
+  
   if (userEmail.match(mailformat)) {
     alert('You are regesterd now');
   }
