@@ -9,13 +9,13 @@ main {
     margin:auto ;
     background-color:white;
     display: grid;
+    border-radius: 3%;
     grid-template-rows: 6;
     gap: 50px;
     animation: rainbow 25s infinite;
-  user-select: none;
-  border-bottom: 50px;
-  border-radius: 3%;
-  justify-content: center;
+    user-select: none;
+    border-bottom: 50px;
+    justify-content: center;
   
     }
 
