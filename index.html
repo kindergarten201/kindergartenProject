@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='CSS/reset.css'>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/a6a75ce312.js" crossorigin="anonymous"></script>
+     
+</head>
+  
+<body> 
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script>
+        $(function () {
+            $("#h").load("header.html");
+            $("#f").load("footer.html");
+
+        }); 
+    </script>
+    <header id="h"></header>
+    <main >
+        <div id="main">
+        <fieldset id="fieldset">
+       
+        <form id="Form"> 
+           
+            <label for="f_Name"> Child First Name</label>
+            <input type="text" name="" id="f_Name" required placeholder="Enter Child First Name">
+
+            <label for="l_Name">Child Last Name:*</label>
+            <input type="text" name="" id="l_Name" required placeholder="Enter Name ">
+
+            <label for="fa_Name">Father Name:</label>
+            <input type="text" name="" id="fa_Name" placeholder="Enter Name">
+
+            <label for="ma_Name">Mather Name:</label>
+            <input type="text" name="" id="ma_Name" placeholder="Enter Name">
+
+            <label for="Address">Child Home Address:*</label>
+            <input type="text" name="" id="Address" required placeholder="Enter Address">
+
+            <label for="Email">Email:</label>
+            <input type="email" name="" id="Email" placeholder="Enter Email">
+
+            <label for="National">Child National:*</label>
+            <input type="text" name="" id="National" required placeholder=" Enter National ">
+
+            <label for="National_ Num">Child National Number*: </label>
+            <input type="number" name="" id="National_Num" required placeholder="Enter National Number">
+    
+            
+            <label for="Phone">Phone Number:*</label>
+            <input type="number" name="" id="Phone" required placeholder="Enter Phone Number">
+
+            <label for="Age">Child Age: *</label>
+            <input type="number" name="" required id="Age" max="8" min="3" placeholder="AGE BETBEEN 3 TO 8">
+
+            <label for="">Child Gender</label>
+            <select id="Gender">
+                <option value="Male" selected>Male</option>
+                <option value="Female">Female</option>
+            </select>
+            <input type="checkbox" name="healthy" id="healthy" value="healthy" checked><label for="healthy">Does the
+                child have any health problems?</label>
+            <input type="submit" value="register">
+       
+          
+        </form>
+    </fieldset>
+</div>
+<table class="rwd-table" id="tbl"></table>
+   <br><br><br>
+   <div>
+   <table class="rwd-table" id="tbl2">
+</div>
+   </table>   
+<br><br><br>
+<div></div>
+ <ul>
+     
+ </ul>
+</main>
+<footer id="f"></footer>
+   
+        
+
+
+
+    <script src="app.js"></script>
+    <footer></footer>
+</body>
+
+</html>
