@@ -2,12 +2,13 @@
 
 body {
   display: grid;
-  grid-template-rows: 100px auto 100px;
+  grid-template-rows: 200px auto 200px;
   background-color: blueviolet;
   color: rgb(245, 212, 212);
   font-size: 100%;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
+ margin: 30px 0px;
 }
 
 @import "compass/css3";
@@ -99,7 +100,7 @@ body {
 	 color: #dd5;
 }
  
-form {
+.form {
   border-top: 5px solid #01caa7;
   width: 552px;
   margin: 40px auto;
