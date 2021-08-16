@@ -7,12 +7,19 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
         </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
         <link rel="stylesheet" href="./CSS/reset.css">
         <link rel="stylesheet" href="./CSS/alphaGame.css">
     <title> alphabets game </title>
 </head>
 <body>
-    <header></header>
+    <header id="h"></header>
     <main> 
         <button id="one"> start </button>
         <p id="question"></p>
@@ -20,7 +27,7 @@
         <input type="submit" value="Submit Answer" id="submit">
         
     </main>
-    
+    <footer id="f">
     </footer>
     
 </body>

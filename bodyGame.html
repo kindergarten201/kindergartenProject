@@ -7,15 +7,21 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
         </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
         <link rel="stylesheet" href="./CSS/reset.css">
         <link rel="stylesheet" href="./CSS/bodyGame.css">
     <title> Body Parts Game </title>
 </head>
 <body>
     <span> <a href="#"> </a> </span>
-    <header></header>
+    <header id="h"></header>
     <main>
-        <p id="name"></p>
         <p id="ques"> What Body Part is This? </p>
         <section id="buttons">
 <button id="arm"> Arm </button>
@@ -29,7 +35,7 @@
 </section>
 <img src="" alt="" id="hero">
     </main>
-    <footer>
+    <footer id="f">
 
     </footer>
     

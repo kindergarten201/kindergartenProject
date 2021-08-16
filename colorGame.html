@@ -4,6 +4,13 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
         </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +19,7 @@
     <title>Document</title>
 </head>
 <body>
-    <header>    </header>
+    <header id="h">    </header>
     <main>
         <p id="question" ></p>
         <section class="image-section" id="imageSection">
@@ -67,7 +74,7 @@
     
     </div>
     </main>
-    <footer>        
+    <footer id="f">        
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
