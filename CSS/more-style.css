@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+
 .wrapper {
     --color: #1f242d;
     --color-invert: #fff;
@@ -9,21 +11,22 @@
     --duration: 0.4s;
     --timing-function: ease;
     position: relative;
-    display: flex;
-    justify-content: center;
+     justify-content: right;
     align-items: center;
-    width: 50%;
     display: inline-block;
 }
 
 
 main {
-    margin: 30px 0px;
+    margin: 10px 0px;
+    /* background-color: #0CECDD ; */
+    border-radius: 10px;
+    padding: 20px;
 }
 
 .wrapper .video {
     overflow: hidden;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     margin-left: 15px;
     clip-path: var(--clip-path);
@@ -50,6 +53,14 @@ main {
     letter-spacing: 0.2px;
     opacity: var(--opacity, 1);
     transition: opacity 0.3s var(--timing-function) 0.2s;
+    cursor: pointer;
+    background-color: crimson;
+    border-radius: 10px 30px 10px 30px;
+    color: rgb(255, 255, 68);
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
 }
 
 .wrapper .text::before, .wrapper .text::after {
@@ -59,6 +70,8 @@ main {
     left: -1px;
     right: 25px;
     height: 0;
+
+    
 }
 
 .wrapper .text::before{
@@ -89,6 +102,8 @@ main {
     transition: clip-path var(--duration) var(--timing-function);
     position: absolute;
     left: 0;
+    content: "";
+    
 }
 
 .wrapper input {
@@ -169,17 +184,17 @@ main {
 }
 
 body {
-    width: 1080px;
+    width: 1300px;
     margin: auto;
     font-family: 'Oswald', sans-serif; 
-    background-color: #A2D5F2;
+    background-color: #FFFAA4;
 }
 .links{
-    margin: 25px 0px;
+    margin: 25px auto;
     padding: 25px 0px;
     height: 50px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap : 50px ;
 }
 
@@ -197,7 +212,7 @@ body {
 
 .h-sec {
     line-height: normal;
-    background-color: #79D70F;
+    background-color: #0CECDD;
     padding: 20px;
     border-radius: 50px;
 }
@@ -205,7 +220,7 @@ body {
 main h3, h4, h6 {
     font-family: 'Lobster', cursive;
     font-weight: normal;
-    color: #EDF4F2;
+    color: #086972;
 }
 
 
@@ -231,15 +246,32 @@ h3 {
     padding: 20px;
 }
 
-.links>a , .links>div {
-    color: #A2D5F2;
-    background-color: tomato;
+.links>a  {
     box-shadow: #223808;
     display: inline-block;
-    margin: 10px auto ;
-    padding: 30px 10px;
-    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background-color: crimson;
+    border-radius: 10px 30px 10px 30px;
+    color: #EDF4F2;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    text-decoration: none;
 }
+
+.links>a:hover{
+    
+
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px crimson;
+    color: #000;
+}
+
 
 .img-sec {
     margin: 25px 0px;

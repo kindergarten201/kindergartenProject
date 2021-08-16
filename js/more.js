@@ -213,4 +213,3 @@ function iecSecCreate() {
     sec2.appendChild(vid);
   }
 }
-

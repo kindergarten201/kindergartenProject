@@ -1,36 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-/* header {
-    width: 1080px;
-    margin: 50px auto;
-    overflow: hidden;
-    background-color: #FFF338;
-} */
-
-#header input {
-    position: absolute;
-    display: none
-}
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
 .menu {
-    position: relative;
-    z-index: 5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
+
 
 .btn {
     width: 80px;
     height: 80px;
     border-radius: 70px;
-    position: absolute;
     overflow: hidden;
     cursor: pointer;
 }
 
-
+.h2 p, .h2 h4 {
+    margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Recursive', sans-serif;
+    font-weight: 600;
+    color: crimson;
+}
 
 .btn {
-    background-color: #F5A31A;
+    background-color: crimson;
     font-size: 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -39,124 +34,27 @@
     -ms-flex-align: center;
     align-items: center;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    animation: spin 10s infinite linear;
 }
 
-.btn:not(:first-child) {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    z-index: -2;
-    -webkit-transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
-    transition: all 0.6s cubic-bezier(.87, -.41, .19, 1.44);
-}
-
-.btn:nth-child(2) {
-    top: 0px;
-    -webkit-transition-delay: 0s;
-    transition-delay: 0s
-}
-
-.btn:nth-child(3) {
-    top: 0px;
-    left: 0px;
-    -webkit-transition-delay: 0.1s;
-    transition-delay: 0.1s
-}
-
-.btn:nth-child(4) {
-    left: 0px;
-    -webkit-transition-delay: 0.2s;
-    transition-delay: 0.2s
-}
-
-.btn:nth-child(5) {
-    top: 0px;
-    left: 0px;
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s
-}
-
-.btn:nth-child(6) {
-    top: 0px;
-    -webkit-transition-delay: 0.4s;
-    transition-delay: 0.4s
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(2) {
-    left: 150px;
-    background-color: #F5A31A;
-    opacity: 0.7;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(3) {
-    background-color: #F5A31A;
-    opacity: 0.7;
-    top: 100px;
-    left: 100px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(4) {
-    background-color: #F5A31A;
-    opacity: 0.7;
-    top: 150px;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(5) {
-    top: 100px;
-    left: -100px;
-    background-color: #F5A31A;
-    opacity: 0.7;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(6) {
-    left: -150px;
-    background-color: #F5A31A;
-    opacity: 0.9;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-}
-
-.menuBtn, .closeBtn {
-    position: absolute;
-    transition: all 0.3s ease;
-}
-
-.closeBtn {
-    transform: translateY(50px);
-    opacity: 0;
-}
-
-input#toggle:checked~#show-menu .btn .menuBtn {
-    transform: translateY(-50px);
-    opacity: 0;
-}
-
-input#toggle:checked~#show-menu .btn .closeBtn {
-    transform: translateY(0px);
-    opacity: 1;
-}
 /* ///////////////////////////////// */
+
 #header {
-    width: 1000px;
-    margin: 30px  20px;
+    width: 1300px;
+    margin: 10px 20px;
     display: grid;
-    grid-template-columns: 100px 700px 100px;
+    grid-template-columns: 100px 700px 300px;
 }
 
 #h {
     border: white inset 3px;
     border-radius: 50px;
-    height: 150px;
-    width: 1080px;
-     margin: 50px auto; 
-    background-color: #F7EA00;
+    height: 100px;
+    width: 1300px;
+    margin: 10px auto;
+    background-color: rgb(255,255,68);
+    color: crimson;
 }
-
-
-
 
 #header img, h1 {
     display: inline-block;
@@ -168,8 +66,6 @@ input#toggle:checked~#show-menu .btn .closeBtn {
     object-fit: contain;
 }
 
-/*  */
-
 .btn img {
     width: 50px;
     height: 50px;
@@ -180,15 +76,15 @@ input#toggle:checked~#show-menu .btn .closeBtn {
 
 @keyframes float {
     0% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        box-shadow: 0 5px 15px 0px crimson;
         transform: translatey(0px);
     }
     50% {
-        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        box-shadow: 0 25px 15px 0px crimson;
         transform: translatey(-30px);
     }
     100% {
-        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        box-shadow: 0 5px 15px 0px crimson;
         transform: translatey(0px);
     }
 }
@@ -204,6 +100,7 @@ input#toggle:checked~#show-menu .btn .closeBtn {
 }
 
 /* /////////////// animation of nav buttons //////////////////// */
+
 @keyframes spin {
     from {
         transform: rotate(0);
@@ -213,35 +110,12 @@ input#toggle:checked~#show-menu .btn .closeBtn {
     }
 }
 
-input#toggle:checked~#show-menu .btn:nth-child(1) {
-    animation: spin 10s infinite linear;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(2) {
-    animation: spin 10s infinite linear;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(3) {
-    animation: spin 10s infinite linear;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(4) {
-    animation: spin 10s infinite linear;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(5) {
-    animation: spin 10s infinite linear;
-}
-
-input#toggle:checked~#show-menu .btn:nth-child(6) {
-    animation: spin 10s infinite linear;
-}
-
 /*///////////////////////// h1 animation ///////////////////////////////////*/
 
 .words {
     margin-left: 50px;
-    color: #F5A31A;
+    color: crimson;
+    ;
     font-size: 0;
     line-height: 1;
     display: inline-block;
@@ -258,8 +132,6 @@ input#toggle:checked~#show-menu .btn:nth-child(6) {
 @keyframes move {
     0% {
         transform: translate(-30%, 0);
-        /* box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6); */
-
     }
     100% {
         transform: translate(30%, 0);
@@ -301,7 +173,6 @@ input#toggle:checked~#show-menu .btn:nth-child(6) {
 .words span:nth-child(1) {
     animation-delay: 4.5s;
 }
-
 
 .words span:nth-child(11) {
     animation-delay: 5s;
