@@ -2,7 +2,9 @@
 
 a{
     text-decoration: none;
-    color: rgba(255, 0, 0, 0.411);
+    color: tomato;
+    font-family: 'Oswald', sans-serif; 
+
 }
 
 #f {
@@ -10,13 +12,13 @@ a{
     height: 220px;
     margin: 25px auto;
     overflow: hidden;
-    background-color: #FFF338;
+    background-color: #79D70F;
     display: grid;
     grid-template-rows: 1fr 2px 1fr;
     border: white inset 3px;
     border-radius: 50px;
-    color: rgba(255, 0, 0, 0.411);
-    font-family: cursive;
+    font-family: 'Oswald', sans-serif; 
+    color: #F5A31A;
 }
 
 #footer-logo {
@@ -64,7 +66,6 @@ form>input, label {
 
 .footerRow2 p {
     text-align: center;
-    font-family: cursive;
     font-size: 15px;
     color :tomato;
     
@@ -73,7 +74,6 @@ form>input, label {
     height: fit-content;
 }
 .footerRow1  h4{
-    font-family: cursive;
     font-size: 15px;
     color: tomato;
     margin-bottom: 10px;
@@ -117,7 +117,7 @@ height: 60px;
     cursor: pointer;
     font-size: 10px;
     letter-spacing: 4px;
-    background-color: rgba(255, 0, 0, 0.411) ;
+    background-color: #F5A31A;
     border-radius: 10px 30px 10px 30px;
     color: #fff;
     margin: 20px auto;
@@ -136,7 +136,7 @@ height: 60px;
   
   .button:after {
     content: "";
-    background-color: rgba(255, 0, 0, 0.411) ;
+    background-color: #F5A31A;
    
     display: block;
     position: absolute;
@@ -157,7 +157,7 @@ height: 60px;
 .input-email{
     position: relative; ;
     display: block !important; 
-    background-color: rgba(255, 0, 0, 0.411) ;
+    background-color: #F5A31A ;
    
     color: white;
     border-radius: 10px 30px 10px 30px;
