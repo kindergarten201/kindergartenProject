@@ -3,14 +3,16 @@ body {
   height: 1000px;
   margin: auto;
     background-color: #FDF6F0 ;
+    background-image: url("/img/image-from-rawpixel-id-2887419-png.png");
     
    
 
     
 }
 main {
-  background-color: rgb(216, 137, 20);
+  background-color: rgb(255,255,68);
   border-radius: 3%;
+  background-image: url("/img/image-from-rawpixel-id-3584316-png.png");
   
 }
 
@@ -20,7 +22,7 @@ main {
   display: grid;
   grid-gap: 50px;
   grid-template-columns: auto auto ;
-  margin-left: 50px;
+  /* margin-left: 50px; */
 
   
   
@@ -48,8 +50,8 @@ p {
 .box{
   border-radius: 3%;
   background-color: lightgrey;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border: 1px solid green;
   padding: 10px;
   margin: auto;
