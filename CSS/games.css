@@ -1,0 +1,163 @@
+
+
+body {
+    width: 1300px ;
+    margin:auto ;
+    background-color:rgb(255, 255, 68)
+  }
+
+  main{
+      background-color: white;
+      border-radius: 3%;
+      height: 1110px;
+      /* background-image: url('../img/bgk10.png'); */
+    /* background-repeat: no-repeat;
+  background-size:cover; */
+  }
+  
+
+#para1{
+width: 960px;
+text-align: center;
+align-items: center;
+align-content: center;
+margin: auto;
+font-size: 40px;
+font-family: 'Modak', cursive;
+padding-top: 20px;
+color: crimson;
+/* background-image: url('../img/bgk10.png'); */
+    /* background-repeat: no-repeat;
+  background-size:cover; */
+}
+
+
+.images button {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    color: white;
+    font-family: cursive;
+    justify-content: center;
+    border-radius: 3%;
+    box-shadow: 5px 10px crimson;
+    
+}
+
+
+
+#p1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+   
+    
+    
+}
+#p2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    
+    
+}
+
+
+#game1 {
+    padding: 100px 100px;
+    margin: auto;
+    transition: width 2s, height 2s, transform 2s;
+    background-image: url('../img/kida.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+    margin-left: 250px;
+    border-radius: 3%;
+    color: black;
+    
+    
+}
+#game1:hover {
+    width: 500px;
+  height: 500px;
+  transform: rotate(360deg);
+  background-image: url('../img/alpha.jpeg');
+  
+}
+
+
+#game2 {
+    padding: 100px 100px;
+    margin: auto;
+    transition: width 2s, height 2s, transform 2s;
+    margin-right: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kidc.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+}
+
+#game2:hover{
+    width: 500px;
+    height: 328px;
+  transform: rotate(360deg);
+  background-image: url('../img/color.jpg');
+}
+
+#game3 {
+    padding: 100px 100px;
+    margin: auto;
+    transition: width 2s, height 2s, transform 2s;
+    margin-left: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kidb.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  margin-bottom: 100px;
+}
+#game3:hover{
+    width: 500px;
+    height: 470px;
+    transform: rotate(360deg);
+    background-image: url('../img/numbers.jpeg');
+}
+
+#game4 {
+    padding: 100px 100px;
+    margin: auto;
+    transition: width 2s, height 2s, transform 2s;
+    margin-right: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kid_d.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  margin-bottom: 100px;
+}
+
+#game4:hover{
+    width: 400px;
+    height: 500px;
+    transform: rotate(360deg);
+    background-image: url('../img/body.png');
+}
+
+.hide {
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+
+#home {
+    width: 400px;
+    margin-left: 400px;
+    
+
+
+font-size: 40px;
+font-family: 'Modak', cursive;
+color: crimson;
+
+}

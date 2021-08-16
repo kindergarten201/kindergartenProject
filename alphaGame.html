@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+        </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/alphaGame.css">
+    <title> alphabets game </title>
+</head>
+<body>
+    <header id="h"></header>
+    <main> 
+        <section id="game">
+        <button id="one"> start </button>
+        <p id="question"></p>
+        <input type="text" id="answer" name="answer" value="" placeholder="Your Answer"> 
+        <input type="submit" value="Submit Answer" id="submit">
+    </section>
+    <button onclick="document.location='./main.html'" id="back">Go Back To The Main page</button>
+    <p class="bubble speech">Hello, Im Ducky The Duck, My Friends Are Waiting For You In The Games, Don't Forget To Visit Them.</p>
+        <img src="/img/ducky.jpg" alt="" id="duck">
+        
+          
+    </main>
+    <footer id="f">
+    </footer>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+<script src="./JS/alphaGame.js"></script>
+</html>
