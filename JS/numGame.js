@@ -1,6 +1,6 @@
 'use strict'
 let numbers=['1','2','3','4','5','6','7','8','9','0'];
-let numArr=['1.jpg','2.jpg','3.jpg','4.jpg','50.jpg','6.jpg','70.jpg','8.jpg','9.jpg','0.jpg'];
+let numArr=['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg','7.jpg','8.jpg','9.jpg','0.jpg'];
 let one= document.getElementById('1');
 let two= document.getElementById('2');
 let three= document.getElementById('3');
@@ -18,7 +18,7 @@ let submitter= document.getElementById('submit');
 let answerr= document.getElementById('answer');
 let answers;
 let i=0;
-let previous;
+let previous=[];
 let rounds=12;
 let correct=0;
 let nameAlone=0;
@@ -39,21 +39,25 @@ function Numbers(name , src){
 for( let k = 0; k < numArr.length; k++ ) {
   new Numbers( numArr[k].split( '.' )[0], numArr[k] );
 }
-// console.log( Number.all );
+//console.log( Number.all );
 
 let randomNum;
 function render() {
     randomNum= random(0, (numArr.length - 1)); 
-    previous= answers;
+    
 do {
     randomNum= random(0, (numArr.length - 1));
+    console.log(randomNum);
+    
+    nameAlone=numArr[randomNum].split( '.' )[0];
 }
-while( randomNum == previous);
+while( randomNum == previous[previous.valuelength-1]);
 
 nameAlone=numArr[randomNum].split( '.' )[0];
 img.src = '../img/' + Numbers.all[randomNum].src;
+previous.push(answer.value);
 
-//   console.log(nameAlone);
+console.log(previous);
 
 answerr.value='';
   }
@@ -62,7 +66,7 @@ answerr.value='';
 submitter.addEventListener( "click", addAnswer );
 function addAnswer(event){
     answers=answer.value;
-    console.log(answers);
+    //console.log(answers);
 
     
    
@@ -74,8 +78,8 @@ function addAnswer(event){
             correct++;
             i++;
             render();
-            console.log(answerr);
-            console.log(answerr); 
+            // console.log(answerr);
+            // console.log(answerr); 
             
         }
     else if (answers == ''){

@@ -7,11 +7,20 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
         </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
         <link rel="stylesheet" href="./CSS/reset.css">
         <link rel="stylesheet" href="./CSS/numGame.css">
     <title> Numbers Game </title>
 </head>
 <body>
+    <header id="h"></header>
+    <main>
     <p id="question">  What is This Number ? </p>
     <img src="" alt="" id="numImg">
     <div>
@@ -32,7 +41,8 @@
         <br>
         <p id="results"> Result </p>
     </section>
-    
+</main>
+    <footer id="f"></footer>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
 <script src="./JS/numGame.js"></script>
