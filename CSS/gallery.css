@@ -94,7 +94,7 @@ font-size: 15px;
   margin-top: 10px;
 }
 
-.button {
+/* .button {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -136,4 +136,4 @@ font-size: 15px;
   transition: 0s
 }
 
-.button:focus { outline:0; }
+.button:focus { outline:0; } */
