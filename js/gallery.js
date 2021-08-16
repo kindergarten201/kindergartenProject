@@ -14,55 +14,89 @@ function carousel() {
   setTimeout(carousel, 3500);    
 }
 
-$(function () {
-  $("#h").load("header.html");
-});
-$(function () {
-  $("#h").load("footer.html");
-});
- 
-document.querySelector('button1').addEventListener('click', promptMe1());
-document.querySelector('button2').addEventListener('click', promptMe2());
-document.querySelector('button3').addEventListener('click', promptMe3());
-document.querySelector('button4').addEventListener('click', promptMe4());
-document.querySelector('button5').addEventListener('click', promptMe5());
-
-var firstName1;
-function promptMe1(evt) {
-    var firstName = prompt("PleaseType Your First Name?");
+let firstName1;
+function promptMe1() {
+    let firstName = prompt("PleaseType Your First Name?");
     firstName1=firstName
     alert (`Hello ${firstName} ☺️`);
- evt.preventDefault();
- return promptMe1();
 }
-
-function promptMe2(evt) {
-  var lastName = prompt("Input your Last Name,please!");
+let lastName;
+function promptMe2() {
+  lastName = prompt("Input your Last Name,please!");
   alert ("Welcome To Our Website "+ firstName1 +" "+lastName +" 😃");
-evt.preventDefault();
-return promptMe2();
-}
 
-function promptMe3(evt) {
-    var rate = prompt("Give us a Rate Out Of 5 ?");
+}
+let rate;
+function promptMe3() {
+    rate = prompt("Give us a Rate Out Of 5 ?");
     while ( rate != 1 && rate != 2 && rate != 3 && rate != 4 && rate!= 5 ){
       rate = prompt("Give us a Rate Out Of 5 ?");
     }
-   
+  
     alert (`your Rate is ${rate} Thank You!😃` );
- evt.preventDefault();
- return promptMe3();
+
 }
 
-function promptMe4(evt) {
-    var comment = prompt("If You Have Any Suggestions, Recommendations or just some nice words about us, please Type Here!🥰");
+let comment;
+function promptMe4() {
+     comment = prompt("If You Have Any Suggestions, Recommendations or just some nice words about us, please Type Here!🥰");
     alert ('Taken!👌 Thank You 😊');
- evt.preventDefault();
- return promptMe4();
+    reviews();
 }
-function promptMe5(evt) {
+function promptMe5() {
   alert ('Just Wanted to see You one more time 😜 Never drop your SMILE 😃 Saty Safe 👋');
   
-evt.preventDefault();
-return promptMe5();
 }
+
+function userReview(userName1,userlastName,userRate,userComment,userDate){
+  this.userName1=userName1;
+  this.userlastName = userlastName ;
+  this.userRate = userRate ;
+  this.userComment = userComment ;
+  this.userDate = userDate;
+  userReview.all.push(this);
+  }
+  userReview.all=[];
+  
+
+
+function reviews(){
+  if (!firstName1){
+    promptMe1();
+  }
+  if (!lastName){
+    promptMe2();
+  }
+  if (!rate){
+    promptMe3();
+  }
+  
+  let scroll= document.getElementsByClassName('scroll');
+let nameEl = document.createElement('h2');
+nameEl.textContent = ` ${firstName1}   ${lastName} `;
+scroll[0].appendChild(nameEl);
+
+let revDate =new Date().getFullYear()+'-'+( new Date().getMonth()+1)+'-'+new Date().getDate();
+let dateEl = document.createElement('h3');
+dateEl.textContent = revDate;
+scroll[0].appendChild(dateEl);
+
+for (let i=0; i< Number(rate);i++){
+  let span =document.createElement('span');
+  span.classList = 'fa fa-star checked';
+  scroll[0].appendChild(span);
+}
+
+
+let commentEl = document.createElement('p');
+commentEl.textContent = comment;
+scroll[0].appendChild(commentEl);
+
+firstName1 =undefined;
+lastName = undefined ;
+rate = undefined ;
+return;
+}
+
+
+
