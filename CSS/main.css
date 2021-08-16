@@ -1,37 +1,146 @@
 body {
+  width: 1300px;
+  height: 1000px;
+  margin: auto;
     background-color: #FDF6F0 ;
+    
    
 
     
 }
-
-.mySlides {
-    display: none;
+main {
+  background-color: rgb(216, 137, 20);
+  border-radius: 3%;
+  
 }
-#example1 {
+
+.one {
   margin-top: 50px;
-   
-    padding: 15px 10px;
-    background-size: 50px, 80px, auto;
-    
-     
-  }
-  main {
-    padding: 20px;
-    border-radius: 30px;
-    width: 960px;
-    margin: auto;
-    
+  align-items: center;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto ;
+  margin-left: 50px;
+
+  
+  
+  
+
 }
-#loc {
-    float: right;
-    margin-top: -50px;
-} 
-.pa {
-    margin: auto;
-    padding: 30px , 30px;
+h3 {
+  color: #B85C38;
+    font-weight: bold;
+    font-style: italic ;
+    font-size: 200%;
+
 }
 p {
+  font-weight: bold;
+  font-style: italic ;
+  font-size: 100%;
+
+}
+.mySlides {
+  border-radius: 3%;
+  
+
+}
+.box{
+  border-radius: 3%;
+  background-color: lightgrey;
+  width: 250px;
+  height: 250px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: auto;
+
+}
+.tow {
+  margin-top: 40px;
+  align-items: center;
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: auto auto auto;
+  margin-left: auto;
+  
+
+
+}
+.per img {
+  border-radius: 50%;
+  margin-top: 50px;
+  /* margin: auto; */
+  margin-left: 130px;
+  transition: transform .2s;
+
+  
+  
+}
+.per:hover {
+  transform: scale(2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.three {
+  align-items: center;
+  display: flex;
+   grid-gap: 145px;
+  /* grid-template-columns: auto auto auto auto;  */
+  /* margin-left: 200px; */
+  /* margin: auto; */
+
+}
+.four {
+  align-items: center;
+  display: flex;
+  /* grid-gap: 50px;
+  grid-template-columns: auto auto auto auto; */
+  margin-left: auto;
+
+
+
+}
+ .box2 {
+ 
+border-radius: 3%;
+  background-color: lightgrey;
+  width: 200px;
+  height: 200px;
+  border: 1px solid green;
+  padding: 10px;
+  margin: auto;
+
+
+}
+.gen {
+  margin: auto; 
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto ;
+  margin-left: 50px;
+  margin-top: 50px;
+ 
+ 
+
+}
+.mmap {
+  border-radius: 5%;
+  
+}
+ 
+#example1 {
+  margin-top: 70px;
+  border-radius: 5%;
+  
+
+}
+/* .mySlides {
+    display: none;
+} */
+
+  
+
+ 
+
+#pp {
     
   
     color: #B85C38;
@@ -40,11 +149,11 @@ p {
     
 }
   
-#myImg {
+ #myImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
-  }
+  } 
   
   #myImg:hover {opacity: 0.7;}
   <!-- 
@@ -117,5 +226,5 @@ p {
     .modal-content {
       width: 100%;
     }
-  }
-  
+  } */
+   
