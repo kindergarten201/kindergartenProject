@@ -152,8 +152,10 @@ input#toggle:checked~#show-menu .btn .closeBtn {
     height: 150px;
     width: 1080px;
      margin: 50px auto; 
-    background-color: #79D70F;
+    background-color: #F7EA00;
 }
+
+
 
 
 #header img, h1 {
