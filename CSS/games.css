@@ -1,22 +1,36 @@
 
 
 body {
-    width: 1080px ;
+    width: 1300px ;
     margin:auto ;
-    background-color:rgb(65, 185, 255)
+    background-color:rgb(255, 255, 68)
   }
 
+  main{
+      background-color: white;
+      border-radius: 3%;
+      height: 1110px;
+      /* background-image: url('../img/bgk10.png'); */
+    /* background-repeat: no-repeat;
+  background-size:cover; */
+  }
+  
 
 #para1{
-width: 100%;
+width: 960px;
 text-align: center;
 align-items: center;
 align-content: center;
 margin: auto;
-margin-top: 40px ;
 font-size: 40px;
 font-family: 'Modak', cursive;
+padding-top: 20px;
+color: crimson;
+/* background-image: url('../img/bgk10.png'); */
+    /* background-repeat: no-repeat;
+  background-size:cover; */
 }
+
 
 .images button {
     width: 250px;
@@ -24,23 +38,42 @@ font-family: 'Modak', cursive;
     margin: auto;
     color: white;
     font-family: cursive;
+    justify-content: center;
+    border-radius: 3%;
+    box-shadow: 5px 10px crimson;
     
 }
 
 
 
-.images {
+#p1{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 40px;
-    margin-top: 40px;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 120px;
+   
+    
+    
 }
+#p2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+    
+    
+}
+
 
 #game1 {
     padding: 100px 100px;
     margin: auto;
     transition: width 2s, height 2s, transform 2s;
-    background-color: green;
+    background-image: url('../img/kida.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+    margin-left: 250px;
+    border-radius: 3%;
+    color: black;
+    
     
 }
 #game1:hover {
@@ -56,7 +89,12 @@ font-family: 'Modak', cursive;
     padding: 100px 100px;
     margin: auto;
     transition: width 2s, height 2s, transform 2s;
-    background-color: blue;
+    margin-right: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kidc.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
 }
 
 #game2:hover{
@@ -70,11 +108,17 @@ font-family: 'Modak', cursive;
     padding: 100px 100px;
     margin: auto;
     transition: width 2s, height 2s, transform 2s;
-    background-color:orange;
+    margin-left: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kidb.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  margin-bottom: 100px;
 }
 #game3:hover{
     width: 500px;
-    height: 500px;
+    height: 470px;
     transform: rotate(360deg);
     background-image: url('../img/numbers.jpeg');
 }
@@ -83,7 +127,13 @@ font-family: 'Modak', cursive;
     padding: 100px 100px;
     margin: auto;
     transition: width 2s, height 2s, transform 2s;
-    background-color: purple;
+    margin-right: 250px;
+    border-radius: 3%;
+    background-image: url('../img/kid_d.jpg');
+    background-repeat: no-repeat;
+  background-size:cover;
+  color: black;
+  margin-bottom: 100px;
 }
 
 #game4:hover{
@@ -98,4 +148,16 @@ font-family: 'Modak', cursive;
 }
 .show{
     display: inline-block;
+}
+
+#home {
+    width: 400px;
+    margin-left: 400px;
+    
+
+
+font-size: 40px;
+font-family: 'Modak', cursive;
+color: crimson;
+
 }

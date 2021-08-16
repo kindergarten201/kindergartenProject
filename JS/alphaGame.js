@@ -25,7 +25,7 @@ function genQues (){
     button.textContent= 'Next Question';
     if(i<=rounds){
     index=Random( 1 , alpha.length-1 );
-    ques.textContent= 'what is the alphabet before   ' + alpha[index];
+    ques.textContent= 'what is the alphabet before   ' + alpha[index]+ ' ?';
     //console.log(index)
     i++;
     document.getElementById('answer').value = "";
