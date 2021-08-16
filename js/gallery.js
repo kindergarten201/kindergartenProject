@@ -14,6 +14,12 @@ function carousel() {
   setTimeout(carousel, 3500);    
 }
 
+$(function () {
+  $("#h").load("header.html");
+});
+$(function () {
+  $("#h").load("footer.html");
+});
  
 document.querySelector('button1').addEventListener('click', promptMe1());
 document.querySelector('button2').addEventListener('click', promptMe2());
