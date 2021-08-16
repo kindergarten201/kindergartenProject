@@ -24,13 +24,10 @@
     cursor: pointer;
 }
 
-.material-icons.md-36 {
-    font-size: 36px;
-    color: #FFF338;
-}
+
 
 .btn {
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     font-size: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -88,12 +85,12 @@
 
 input#toggle:checked~#show-menu .btn:nth-child(2) {
     left: 150px;
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     opacity: 0.7;
 }
 
 input#toggle:checked~#show-menu .btn:nth-child(3) {
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     opacity: 0.7;
     top: 100px;
     left: 100px;
@@ -101,7 +98,7 @@ input#toggle:checked~#show-menu .btn:nth-child(3) {
 }
 
 input#toggle:checked~#show-menu .btn:nth-child(4) {
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     opacity: 0.7;
     top: 150px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -110,14 +107,14 @@ input#toggle:checked~#show-menu .btn:nth-child(4) {
 input#toggle:checked~#show-menu .btn:nth-child(5) {
     top: 100px;
     left: -100px;
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     opacity: 0.7;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input#toggle:checked~#show-menu .btn:nth-child(6) {
     left: -150px;
-    background-color: #FF67E7;
+    background-color: #F5A31A;
     opacity: 0.9;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
@@ -155,7 +152,7 @@ input#toggle:checked~#show-menu .btn .closeBtn {
     height: 150px;
     width: 1080px;
      margin: 50px auto; 
-    background-color: #FFF338;
+    background-color: #79D70F;
 }
 
 
@@ -169,14 +166,7 @@ input#toggle:checked~#show-menu .btn .closeBtn {
     object-fit: contain;
 }
 
-h1 {
-    font-family: Modak;
-    font-weight: normal;
-    margin: 0px 50px;
-    color: #FF67E7;
-    transform: translatey(0px);
-    animation: float 3s ease-in-out infinite;
-}
+/*  */
 
 .btn img {
     width: 50px;
@@ -249,7 +239,7 @@ input#toggle:checked~#show-menu .btn:nth-child(6) {
 
 .words {
     margin-left: 50px;
-    color: #FF67E7;
+    color: #F5A31A;
     font-size: 0;
     line-height: 1;
     display: inline-block;
@@ -266,6 +256,8 @@ input#toggle:checked~#show-menu .btn:nth-child(6) {
 @keyframes move {
     0% {
         transform: translate(-30%, 0);
+        /* box-shadow: 0 5px 10px 0px rgba(0,0,0,0.6); */
+
     }
     100% {
         transform: translate(30%, 0);
