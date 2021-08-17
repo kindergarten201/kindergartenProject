@@ -10,10 +10,11 @@
     <link href="CSS/rand.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <header>
+    <header id="h">
 
     </header>
     <main>
@@ -153,7 +154,13 @@
         </section>
         </div>
     </main>
-    <footer> </footer>
+    <script>
+        $(function () {
+            $("#h").load("header.html");
+            $("#f").load("footer.html");
+        });
+    </script>
+    <footer id="f"> </footer>
     <script src="js/gallery.js"></script>
 </body>
 

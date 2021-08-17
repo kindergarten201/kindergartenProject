@@ -216,7 +216,6 @@ margin-left: 30px;
 }
 #example{
  
-  
   overflow-y: scroll;
 }
 #example::-webkit-scrollbar { display: none;
