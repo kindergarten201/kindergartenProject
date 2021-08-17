@@ -1,0 +1,53 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: midnightblue;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 17px;
+  margin: 10px 20px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;;
+}
+
+.navbar a:hover , .navbar a:active{
+  background: #fe5f97;
+  color: white;
+}
+#logo{
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logo >img{
+    width: 200px;
+    height: 100px;
+}
+.scrolled{
+  background-color: white;
+}
+
+
+   

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/HomeCustom.css">
+    <link rel="stylesheet" href="./CSS/header-style.css">
+    <link rel="stylesheet" href="./CSS/footer-style.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+    $(function () {
+        $("#h").load("header.html");
+        $("#f").load("footer.html");
+    });
+</script>
+
+    <title> Welcome To Stars Kindergarten </title>
+</head>
+
+<body>
+    <header id="h">    </header>
+    <main>
+        <section id="one">
+            <p>
+            <h1>Welcome</h1>
+            </p>
+            <br><br><br><br><br>
+            <p id="magic"> The Magic Land For Kids </p>
+        </section>
+        <section id="two">
+            <img src="./img/us.png" alt="" id="AboutUs">
+            <div>
+                <p id="Us">
+                <h1> About Us </h1> We are an award winning kindergarten with a well trained staff to ensure that your
+                kids will get the ultimate kindergarten experence!
+                <br> We are not like any other Kindergarten as we deliver fun activities and games like no other!
+                <br>from having a full soccer field, trampolines, water guns and many more!
+                <br>
+                <h2> if you are looking for the best, look no further!</h2>
+                </p>
+                <button id="goUs" onclick="document.location='./index.html'"> <span> Contact Us </span> </button>
+            </div>
+
+        </section>
+        <section id="three">
+            <p id="games"> Go Explore The Games And Meet Pando and His Friends!</p>
+            <div id="game">
+                <img src="./img/games.jpeg" alt="" id="gamer">
+                <button id="goGame" onclick="document.location='./games.html'"> <span>Go To Games</span> </button>
+
+            </div>
+        </section>
+
+        <section id="four">
+           <img src="./img/parents2.jpeg" alt="" id="blog">
+           <div>
+               <h2> Our Blog </h2>
+            <p id="blog2"> We Have Collected Some Useful Parenting Tools To Help You With Your Parenting Journey along with videos articles and many More!</p>
+            <button id="goblog" onclick="document.location='./more.html'"> <span>Go To The Blog </span> </button>
+        </div>
+     </section>
+         
+        <section id="five"> 
+<p id="galt"> Gallery </p>
+<p id="galt2"> Click On One Of The Images To be Redirected! </p>
+
+<div id="five5">
+             <a href="./rand.html"><img src="./img/kg1.jpg" alt="" class="gal">
+            <a href="./rand.html"><img src="./img/kg2.jpg" alt="" class="gal">
+            </div>     
+               
+                </section>
+    </main>
+    <footer id="f">        
+    </footer>
+
+</body>
+</html>

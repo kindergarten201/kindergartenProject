@@ -1,0 +1,296 @@
+
+body{
+    width: 100%;
+}
+
+.hero {
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: left;
+  -webkit-animation: slide 40s ease;
+  transform: translate3d(0,0,0);
+  height: 100vh;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: rgba(76,56,75,.8)
+}
+
+.hero__content {
+  z-index: 101;
+  position:fixed
+}
+
+@-webkit-keyframes slide {
+  0%   { background-position: left; }
+  50%   { background-position: right; }
+  100% { background-position: left; }
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+  margin-top: -130px;
+  
+  padding-left: 20px;
+}
+
+.hero__content {
+    padding: 200px 100px;
+    max-width: 800px;
+}
+
+
+
+/* //////// */
+
+.svg-wrapper {
+    height: 60px;
+      margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+    margin-top: 70px;
+  }
+  
+  .shape {
+      
+    fill: #4C384B;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: gold
+    
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 17px;
+    letter-spacing: 3px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+    text-decoration: none;
+
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+  h1{
+      margin-bottom: 20px;
+  }
+
+  #four{
+      padding-left: 105px;
+  }
+  #one{
+    padding-left: 70px;
+  }
+  #two{
+    padding-left: 75px; 
+  }
+  #three{
+      padding-left: 7px;
+  }
+
+/* /////  */
+  @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.5;
+    color: rgb(76,56,75);
+    font-size: 15px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+.heading-title {
+    margin-bottom: 100px;
+    justify-content: center;
+}
+.text-center {
+    text-align: center;
+    justify-content: center;
+}
+.heading-title h3 {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-weight: normal;
+    font-size: large;
+    justify-content: center;
+}
+.p-top-30 {
+    padding-top: 30px;
+}
+.half-txt {
+    width: 60%;
+    margin: 0 auto;
+    display: inline-block;
+    line-height: 25px;
+    color: rgb(76,56,75);
+}
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.team-member, .team-member .team-img {
+    position: relative;
+    
+}
+.team-member {
+    overflow: hidden;
+}
+.team-member, .team-member .team-img {
+    position: relative;
+
+}
+.team-img{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    /* padding-left: 500px; */
+    
+    
+}
+#abd{
+    width: 100%;
+    margin: auto;
+}
+#saja{
+    width: 100%;
+    margin: auto;
+}
+#rand{
+    width: 100%;
+    margin: auto;
+}
+#amer{
+    width: 100%;
+    margin: auto;
+}
+#yahia{
+    width: 100%;
+    margin: auto;
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    border: 20px solid rgba(76,56,75,1);
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .desk {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transform: translateY(-55%);
+    -ms-transform: translateY(-55%);
+    transform: translateY(-55%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    padding: 0 20px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member:hover .team-hover .s-link {
+    bottom: 10%;
+}
+.team-member:hover .team-hover, .team-member:hover .team-hover .desk, .team-member:hover .team-hover .s-link {
+    opacity: 1;
+}
+.team-hover .s-link {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    -webkit-transform: translateY(45%);
+    -ms-transform: translateY(45%);
+    transform: translateY(45%);
+    -webkit-transition: all 0.3s 0.2s;
+    transition: all 0.3s 0.2s;
+    font-size: 35px;
+}
+.desk, .desk h4, .team-hover .s-link a {
+    text-align: center;
+    color: #222;
+}
+.team-member .s-link a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 16px;
+}
+.team-title {
+    /* position: static; */
+    padding: 20px 0;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: auto;
+    
+}
+.team-title h5 {
+    margin-bottom: 0px;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+
+}
+.team-title span {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #a5a5a5;
+    letter-spacing: 1px;
+    
+    text-align: center;
+    margin: auto;
+
+}
+
+ 
+.sp{
+    padding-left: 960px;}

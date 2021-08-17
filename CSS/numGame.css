@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+body{
+    background-color: #255ea8;}
+
+main{
+    width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 6;
+    gap: 40px;
+    background-color: white;
+    border-radius: 3%;
+    margin-top: 164.8px;
+   margin-bottom: 150px;
+
+}
+img {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+#calc{
+    
+  font-family: 'Montserrat', sans-serif;
+    border-radius: 3%;
+    font-size: 50px;
+     /* margin: auto; */
+     text-align: center;
+     color: #fe5f97;
+}
+main div{
+    margin:auto;
+}
+#question{
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 3%;
+    font-size: 50px;
+     /* margin: auto; */
+     text-align: center;
+     color: #32cfbc;
+
+}
+#answer{
+    width: 200px;
+}
+
+#calculator {
+    margin-bottom: 100px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3, 50px);
+        border-color: #fe5f97;
+        border-style:ridge;
+        border-width: 20px;
+        margin-bottom: 30px; 
+        
+    }
+
+#results{
+    background-color: none;
+    margin: auto;
+    
+
+}
+
+button {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 4px;
+    background-color: #fe5f97;
+    border-radius: 10px 30px 10px 30px;
+    color: black;
+    margin: 20px auto;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+  }
+  
+  button:hover {
+    background: #255ea8;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: white;
+  }
+  
+  button:after {
+    content: "";
+    background-color: #255ea8;
+   
+    display: block;
+    position: absolute;
+ 
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  button:focus { outline:0; }
+
+  #submit {
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    letter-spacing: 4px;
+    background-color: #f8d311;
+    border-radius: 10px 30px 10px 30px;
+    color: black;
+    margin: 20px auto;
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  #submit:hover {
+    background: #255ea8;
+    box-shadow: 0px 2px 10px 5px #1abc9c;
+    color: white;
+  }
+  
+  #submit:after {
+    content: "";
+    background-color: #f8d311;
+   
+    display: block;
+    position: absolute;
+ 
+    opacity: 0;
+    transition: all 0.8s
+  }
+  
+  #submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+  
+  #submit:focus { outline:0; }
+
+  p.bubble {
+    position: relative;
+    text-align: center;
+    margin: 40px 40px;
+    background-color: #fff;
+    border: 8px solid #fe5f97;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    font-size: large;
+    width: 700px;
+    margin-bottom: -100px;
+    margin-left: 214px;
+    
+  }
+  
+  p.bubble:before,
+  p.bubble:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  p.speech:before {
+    left: 30px;
+    bottom: -50px;
+    border: 25px solid;
+    border-color: #fe5f97 transparent transparent #fe5f97;
+  }
+  
+  p.speech:after {
+    left: 38px;
+    bottom: -30px;
+    border: 15px solid;
+    border-color: #fff transparent transparent #fff;
+  }
+ #back{
+
+ }
+
+
+ #back {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 4px;
+  background-color: #32cfbc;
+  border-radius:60px 20px 60px 20px;
+  color: black;
+  margin-left: 1000px;
+  margin-bottom: 0px;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+
+#back:hover {
+  background: #255ea8;
+  box-shadow: 0px 2px 10px 5px #f8d311;
+  color: white;
+}
+
+#back:after {
+  content: "";
+  background-color: #fe5f97;
+ 
+  display: block;
+  position: absolute;
+
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#back:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+#back:focus { outline:0; }

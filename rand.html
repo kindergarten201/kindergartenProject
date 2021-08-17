@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/header-style.css">
+    <link rel="stylesheet" href="CSS/footer-style.css">
+    <link href="CSS/rand.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="CSS/header-style.css">
+    <link rel="stylesheet" href="CSS/footer-style.css">
+    <script>
+        $(function () {
+            $("#h").load("header.html");
+            $("#f").load("footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <header id="h">
+
+    </header>
+    <main>
+        <div class="container">
+            <div id="uu" class="title>">
+                <h1 class="galTitle" style="font-family: 'Montserrat', sans-serif;font-size: 60px;"> Gallery </h1>
+            </div>
+            <div id="ii" style="width: 100%;">
+                <ul>
+                    <li id="rr"> <img src="./img/1a.jpg" style="height: 200px;width: 250px; border-radius: 70px;">
+                    </li>
+                    <li id="rr"><img src="./img/front2.jpg" style="height: 200px;width: 250px; border-radius: 70px;">
+                    </li>
+                    <li id="rr"><img src="./img/4a.jpeg" style="height: 200px;width: 250px; border-radius: 70px;">
+                    </li>
+                    <li id="rr"><img src="./img/front.jpg" style="height: 200px;width: 250px; border-radius: 70px;">
+                    </li>
+
+                </ul>
+            </div>
+            <nav id="button1">
+                <button class="button1 button gray" onclick="document.location='./codepen.html'"
+                    style="font-family: 'Lobster', cursive; border: 2px solid rgb(184, 78, 78);background-color: #fe5f97">
+                    Dive Into Our Gallery </button>
+            </nav>
+            <div id="reviewTitle">
+                <h2 class="revTitle" style="font-family: 'Montserrat', sans-serif;font-size: 60px;"> Reviews </h2>
+            </div>
+
+            <section class="review">
+                <div id="left">
+                    <div class="scroll" id="example" style="width: 500px;">
+                        <h3>Adam Lavien</h3>
+                        <h4> 21 sep 2021</h4>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+
+                        <p style="width: 400px;">
+                            I had an amazing summer at stars.Lots of chances to learn and make new friends.
+                        </p>
+                      
+                    </div>
+                </div>
+                <div id="right">
+                    <div class="col-md-6">
+
+                        <div class="col-25" style="width:100%;">
+                            <div class="container">
+                                <form id="form" style="font-family: 'Montserrat', sans-serif;margin-top :20px; ;">
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="fname">First Name</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="lname">Last Name</label>
+                                        </div>
+                                        <div class="col-75">
+                                            <input type="text" id="lname" name="lastname"
+                                                placeholder="Your last name..">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-25">
+                                            <label for="country">Review Rate:</label>
+                                        </div>
+                                        <div id='ee' style="width: 600px;font-size: small;">
+                                            <input id="s1" type="radio" name="radio" onchange="getValue(this)">
+                                            <span class="checkmark"></span>
+                                            <label class="container">One
+
+                                            </label>
+                                            <input id="s2" type="radio" name="radio" onchange="getValue(this)">
+                                            <span class="checkmark"></span>
+                                            <label class="container">Two
+                                            </label>
+                                            <input id="s3" type="radio" name="radio" onchange="getValue(this)">
+                                            <span class="checkmark"></span>
+                                            <label class="container">Three
+
+                                            </label>
+                                            <input id="s4" type="radio" name="radio" onchange="getValue(this)">
+                                            <span class="checkmark"></span>
+                                            <label class="container">Four
+
+                                            </label>
+                                            <input id="s5" type="radio" name="radio" onchange="getValue(this)">
+                                            <span class="checkmark"></span>
+                                            <label class="container">Five
+
+                                            </label>
+                                        </div>
+                                        <div class="col-75">
+                                            <textarea id="subject" name="subject" placeholder="Write your Review .."
+                                                style="height:200px;"></textarea>
+                                        </div>
+
+                                        <div class="row">
+                                            <input type="submit" value="Submit">
+                                        </div>
+                                </form>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        </div>
+    </main>
+  
+    <footer id="f"> </footer>
+    <script src="js/gallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+main{
+  margin-top: 164.8px;
+   margin-bottom: 150px;
+}
+
+body{
+    width: 100%;
+}
+#one{
+height: 700px;
+background-image: url(../img/herooo.jpg);
+background-size: cover;
+ }
+ #one h1{
+     color: #255ea8;
+     width: 100%;
+     margin: auto;
+     text-align: center;
+     font-size: 100px;
+     font-family: 'Montserrat', sans-serif;
+     margin-bottom: 3px;
+     padding-top: 50px;
+     line-height: 0.5;
+    letter-spacing: -3px;
+ }
+ #magic{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+color: #fe5f97;
+
+ }
+
+#two{
+background-color: #255ea8;
+height: 550px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 15px;
+
+ }
+#AboutUs{
+    width: 500px;
+    height: 400px;
+    margin:auto;
+    margin-right: 30px;
+  }
+  div{
+     color: white;
+      width: 90%;
+      margin: auto;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      align-content: center;
+      font-weight: 90;
+      font-size: 30px;
+  }
+  div h1{
+    font-weight: 700;
+    width: 100%;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -2px;
+
+  }
+  div h2{
+    font-weight: 90;
+    width: 100%;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    line-height: 1;
+
+      }
+
+      #goUs{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        /* width: 180px; */
+        background-color: #fe5f97;
+        border-color: #fe5f97;
+        /* position: relative; */
+        text-align: center;
+        z-index: 1;
+        transition: .3s;
+        line-height: 16px;
+        border-radius: 30px;
+        color: white;
+        padding: 11px 30px;
+        margin-top: 30px;
+      }
+      #goUs:hover{ 
+          background-color: #32cfbc;
+          color: white;
+          border-color: #32cfbc;
+
+      }
+#three{ 
+    width: 100%;
+background-color: #f8d311;
+height:250px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+#gamer{
+height: 250px;
+width: 250px;
+float: right;
+}
+#goGame{
+  font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* width: 200px; */
+    background-color: #32cfbc;
+    border-color: #32cfbc ;
+    /* position: relative; */
+    text-align: center;
+    z-index: 1;
+    transition: .3s;
+    line-height: 16px;
+    border-radius: 30px;
+    color: white;
+    padding: 11px 30px;
+    margin-top: 104px;
+    transition: all 0.5s;
+   
+  }
+  #goGame:hover{ 
+      background-color: #255ea8;
+      color: white;
+      border-color: #255ea8;
+      }
+
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+     button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      button:hover span {
+        padding-right: 25px;
+      }
+      
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+   #game{
+    justify-content: center;
+    margin: auto;
+    margin-left: 0px;
+   }
+   #games{
+       margin: auto;
+       justify-content: center;
+       justify-items: center;
+       font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #255ea8;
+    line-height: 1;
+    font-weight: 140;
+      font-size: 40px;
+     font-family: 'Montserrat', sans-serif;
+      padding-left:40px;
+   }
+
+#four{
+
+background-color: #fe5f97;
+height: 600px;
+width: 100%;
+background-size:cover;
+background-repeat: no-repeat;
+margin: auto;
+display: grid;
+gap: 20px;
+grid-template-columns: 1fr 1fr;
+}
+
+#blog{
+  height: 550px;
+  width: 700px;
+  margin: auto;
+}
+#blog2{
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 80;
+      font-size: 20px;
+      color: #f8d311;
+      border-color: #32cfbc;
+      line-height: 1;
+}
+#four h2{
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 140;
+      font-size: 90px;
+      margin-bottom: 7px;
+}
+
+#goblog{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  /* width: 200px; */
+  background-color: #255ea8;
+  border-color: #255ea8;
+  /* position: relative; */
+  text-align: center;
+  z-index: 1;
+  transition: .3s;
+  line-height: 16px;
+  border-radius: 30px;
+  color: white;
+  padding: 11px 30px;
+  margin-top: 30px;
+}
+#goblog:hover{ 
+    background-color: #32cfbc;
+    color: white;
+    border-color: #32cfbc;
+
+}
+#five{background-color: #32cfbc;
+  height: 700px;
+  width: 100%;
+  background-size:cover;
+background-repeat: no-repeat;
+margin: auto;
+  }
+#five5{
+  display: grid;
+gap: 20px;
+grid-template-columns: 1fr 1fr ;
+}
+
+.gal{
+  width:600px;
+  height: 370px;
+ margin:auto ;
+ padding-top: 90px;
+ 
+}
+#galt{
+  font-weight: 700;
+    width: 20%;
+    margin: auto;
+    justify-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 80px;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+.gal:hover{
+ color: rgba(255 , 255, 255, 0.2);
+}
+
+#galt2{
+  font-weight: 500;
+    width: 900px;
+    margin: auto;
+    justify-items: center;
+    /* justify-content: center; */
+    font-style: normal;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -2px;
+    padding-top: 30px;
+}
+

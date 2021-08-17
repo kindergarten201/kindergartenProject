@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+
+body{
+    
+    background-color: #255ea8;
+}
+    
+main {
+    width: 1300px ;
+    height: auto;
+    margin:auto ;
+    background-color:white;
+    display: grid;
+    border-radius: 3%;
+    grid-template-rows: 6;
+    gap: 50px;
+    animation: rainbow 25s infinite;
+    user-select: none;
+    border-bottom: 50px;
+    justify-content: center;
+    margin-top: 164.8px;
+   margin-bottom: 150px;
+  
+    }
+
+#question{
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+    font-size: 75px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8d311;
+    text-align: center;
+    
+}
+
+
+.image-section{
+    margin:auto;
+}
+.image-section img {
+  height: 350px;
+  width: 350px;
+  border-style: groove;
+  border-radius: 3%;
+  box-shadow: 5px 10px #32cfbc;
+  margin-left: 20px;
+}
+
+
+ /* animation */
+      
+      .frame {
+        width: 1080px;
+        height: auto;
+        margin: 5% auto 0;
+        position: absolute;
+        
+      }
+      
+      svg {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      /**
+       * Paper Plane
+       */
+      /*Paper Plane: Container*/
+      
+      /**
+       * Clouds
+       */
+      .clouds {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 300px;
+        overflow: hidden;
+        transform: translateZ(0);
+      }
+      
+      .cloud {
+        position: absolute;
+        top: 200px;
+        width: 300px;
+        right: 0;
+        opacity: 1;
+        /* height: 430px; */
+       
+
+      }
+      
+      .cloud.front {
+        z-index: 9;
+      }
+      
+      .cloud.distant {
+        z-index: 1;
+      }
+      
+      .cloud.background {
+        z-index: 1;
+      }
+      
+      /*Cloud Sizing*/
+      .cloud.smaller {
+        margin-right: 400px;
+        width: 100px;
+        margin-top: 50px;
+      }
+      
+      .cloud.small {
+        margin-right: 200px;
+        width: 150px;
+      }
+      
+      .cloud.big {
+        width: 500px;
+        margin-top: 50px;
+        margin-right: 150px;
+      }
+      
+      .cloud.massive {
+        width: 600px;
+        margin-top: 20px;
+        margin-right: 0px;
+      }
+      
+      
+      /*Cloud: Animation*/
+      .cloud {
+        -webkit-animation-name: cloud-movement;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-direction: forwards;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-duration: 8s;
+      
+        -moz-animation-name: cloud-movement;
+        -moz-animation-timing-function: linear;
+        -moz-animation-direction: forwards;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-duration: 8s;
+      
+        animation-name: cloud-movement;
+        animation-timing-function: linear;
+        animation-direction: forwards;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+      }
+      
+      .slow {
+        -webkit-animation-duration: 9.2s;
+        -moz-animation-duration: 9.2s;
+        animation-duration: 9.2s;
+      }
+      
+      .slower {
+        -webkit-animation-duration: 11.2s;
+        -moz-animation-duration: 11.2s;
+        animation-duration: 11.2s;
+      }
+      
+      .slowest {
+        -webkit-animation-duration: 13.5s;
+        -moz-animation-duration: 13.5s;
+        animation-duration: 13.5s;
+      }
+      
+      .super-slow {
+        -webkit-animation-duration: 20.5s;
+        -moz-animation-duration: 20.5s;
+        animation-duration: 20.5s;
+      }
+      
+      @-webkit-keyframes cloud-movement {
+        0% {
+          opacity: 0.1;
+          -webkit-transform: translateX(300px);
+          -moz-transform: translateX(300px);
+          transform: translateX(300px);
+        }
+        10% {
+      
+          opacity: 0.7;
+        }
+        90% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0;
+          -webkit-transform: translateX(-1000px);
+          -moz-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+        }
+      }
+    /* ///////////////  */
+    #gifo{
+      /* position: fixed; */
+      width: 200px;
+      height: 200px;
+     padding-top: 30px;
+     margin-left: 0px;
+    }
+    
+    p.bubble {
+      position: relative;
+      text-align: center;
+      margin: 40px 40px;
+      background-color: #fff;
+      border: 8px solid #f8d311;
+      border-radius: 30px;
+      font-family: 'Montserrat', sans-serif;
+      padding: 20px;
+      font-size: large;
+      width: 700px;
+      
+    }
+    
+    p.bubble:before,
+    p.bubble:after {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+    }
+    
+    p.speech:before {
+      left: 30px;
+      bottom: -50px;
+      border: 25px solid;
+      border-color: #f8d311 transparent transparent #f8d311;
+    }
+    
+    p.speech:after {
+      left: 38px;
+      bottom: -30px;
+      border: 15px solid;
+      border-color: #fff transparent transparent #fff;
+    }
+
+
+    button {
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
+      font-size: 10px;
+      letter-spacing: 4px;
+      background-color: #fe5f97;
+      border-radius:60px 20px 60px 20px;
+      color: #255ea8;
+     
+      padding: 10px;
+      width: 300px;
+      text-align: center;
+      transition-duration: 0.4s;
+      overflow: hidden;
+    }
+    
+    button:hover {
+      background: #255ea8;
+      box-shadow: 0px 2px 10px 5px rgb(255, 255, 68);
+      color: white;
+    }
+    
+    button:after {
+      content: "";
+      background-color: #32cfbc;
+     
+      display: block;
+      position: absolute;
+    
+      opacity: 0;
+      transition: all 0.8s
+    }
+    
+    button:active:after {
+      padding: 0;
+      margin: 0;
+      opacity: 1;
+      transition: 0s
+    }
+    
+    button:focus { outline:0; }
+
+    #back{
+      margin-left: 1000px;
+    }

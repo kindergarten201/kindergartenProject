@@ -1,0 +1,197 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+main{
+  background-color: white;
+  /* background-image: url('/img/wpp.jpg');
+  background-repeat: no-repeat;
+  background-size:cover; */
+  border-radius: 3%;
+  height: 1000px;
+  margin: auto;
+  margin-top: 164.8px;
+   margin-bottom: 150px;
+}
+body {
+    width: 1300px ;
+    background-color:#fe5f97;
+    margin: auto;
+  
+    }
+    #game{
+      display: grid;
+      grid-template-rows: 3;
+      gap: 50px;
+      
+    }
+
+#question {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+    margin:auto ;
+    color: #32cfbc;
+    }
+  
+#answer{
+    width: 700px;
+    margin:auto;
+    height: 40px;
+    padding: 30px;
+    text-align: center;
+    border-width: 0px;
+    border-color: #32cfbc;
+    color: white;
+  background-color: #32cfbc;
+  border-radius: 30px 10px 30px 10px;
+  }
+
+button {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 4px;
+  background-color: #f8d311;
+  border-radius: 20px 60px 20px 60px;
+  color: #fe5f97;
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  
+}
+
+button:hover {
+  background: #fe5f97;
+  box-shadow: 0px 2px 10px 5px #f8d311;
+  color: white;
+}
+
+button:after {
+  content: "";
+  background-color: #f8d311;
+ 
+  display: block;
+  position: absolute;
+
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+button:focus { outline:0; }
+
+
+#submit {
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 4px;
+  background-color: #f8d311;
+  border-radius: 10px 30px 10px 30px;
+  color: #fe5f97;
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  margin-top: 100px;
+}
+
+#submit:hover {
+  background: #fe5f97;
+  box-shadow: 0px 2px 10px 5px #f8d311;
+  color: white;
+}
+
+#submit:after {
+  content: "";
+  background-color: #f8d311;
+ 
+  display: block;
+  position: absolute;
+
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#submit:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+#submit:focus { outline:0; }
+
+/* ///////// */
+#back{
+  margin-top: 200px;
+  
+}
+
+
+#duck{
+  /* position: fixed; */
+  width: 200px;
+  height: 200px;
+ margin: auto;
+ margin-left: 790px;
+    margin-top: -150px;
+}
+
+p.bubble {
+	position: relative;
+	width: 300px;
+	text-align: center;
+	line-height: 1.4em;
+	/* margin: 40px auto; */
+	background-color: #fff;
+	border: 8px solid #255ea8;
+	border-radius: 30px;
+	font-family: 'Montserrat', sans-serif;
+	padding: 20px;
+	font-size: large;
+  float:right;
+  margin: auto;
+  
+}
+
+p.bubble:before,
+p.bubble:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+p.speech:before {
+	left: 30px;
+	bottom: -50px;
+	border: 25px solid;
+	border-color: #255ea8 transparent transparent #255ea8;
+}
+
+p.speech:after {
+	left: 38px;
+	bottom: -30px;
+	border: 15px solid;
+	border-color: #fff transparent transparent #fff;
+}

@@ -1,0 +1,61 @@
+<link rel="stylesheet" href="./css/header-style.css">
+
+<div id="logo">
+    <img src="./img/logoHeader.png" alt="">
+</div>
+<div class="navbar">
+    <div>
+        <a href="index.html">
+            Home
+        </a>
+    </div>
+    <div>
+        <a href="form.html">
+            Regestration
+        </a>
+    </div>
+    
+    <div>
+        <a href="games.html">
+            Games
+        </a>
+    </div>
+    <div>
+        <a href="rand.html">
+            Gallery
+        </a>
+    </div>
+    <div>
+        <a href="more.html">
+            Blog
+        </a>
+    </div>
+    <div>
+        <a href="about-us.html">
+            Contact Us
+        </a>
+    </div>
+
+</div>
+<script>
+    let navbar = document.getElementsByClassName('navbar')[0];
+    let logoDiv = document.getElementById('logo');
+
+    window.onscroll = function () {
+
+        // pageYOffset or scrollY
+        if (window.pageYOffset > 10) {
+            navbar.classList.add('scrolled');
+            logoDiv.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+            logoDiv.classList.remove('scrolled');
+        }
+    }
+</script>
+
+
+
+</body>
+
+</html>
