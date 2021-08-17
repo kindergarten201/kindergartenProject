@@ -8,7 +8,13 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='CSS/reset.css'>
     <link rel="stylesheet" href="CSS/style.css">
-    
+    <script>
+        $(function () {
+            $("#h").load("header.html");
+            $("#f").load("footer.html");
+        });
+    </script>
+      
     <script src="https://kit.fontawesome.com/a6a75ce312.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/header-style.css">
     <link rel="stylesheet" href="CSS/footer-style.css">
@@ -18,76 +24,76 @@
 </head>
 
 <body>
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function () {
-            $("#h").load("header.html");
-            $("#f").load("footer.html");
-
-        });
-    </script>
     <header id="h"></header>
     <main>
-        <div id="main">
-            <fieldset id="fieldset">
+            <div id="main">
+                <fieldset id="fieldset">
 
-                <form class="form" id="Form">
+                    <form class="form" id="Form">
 
-                    <label for="f_Name"> Child First Name</label>
-                    <input type="text" name="" id="f_Name" required placeholder="Enter Child First Name">
+                        <label for="f_Name"> Child First Name</label>
+                        <input type="text" name="" id="f_Name" required placeholder="Enter Child First Name">
 
-                    <label for="l_Name">Child Last Name:*</label>
-                    <input type="text" name="" id="l_Name" required placeholder="Enter Name ">
+                        <label for="l_Name">Child Last Name:*</label>
 
-                    <label for="fa_Name">Father Name:</label>
-                    <input type="text" name="" id="fa_Name" placeholder="Enter Name">
+                        <input type="text" name="" id="l_Name" required placeholder="Enter Name ">
+                        <label for="fa_Name">Father Name:</label>
+                        <input type="text" name="" id="fa_Name" placeholder="Enter Name">
 
-                    <label for="ma_Name">Mather Name:</label>
-                    <input type="text" name="" id="ma_Name" placeholder="Enter Name">
+                        <label for="ma_Name">Mather Name:</label>
+                        <input type="text" name="" id="ma_Name" placeholder="Enter Name">
 
-                    <label for="Address">Child Home Address:*</label>
-                    <input type="text" name="" id="Address" required placeholder="Enter Address">
+                        <label for="Address">Child Home Address:*</label>
+                        <input type="text" name="" id="Address" required placeholder="Enter Address">
 
-                    <label for="Email">Email:</label>
-                    <input type="email" name="" id="Email" placeholder="Enter Email">
+                        <label for="Email">Email:</label>
+                        <input type="email" name="" id="Email" placeholder="Enter Email">
 
-                    <label for="National">Child National:*</label>
-                    <input type="text" name="" id="National" required placeholder=" Enter National ">
+                        <label for="National">Child National:*</label>
+                        <input type="text" name="" id="National" required placeholder=" Enter National ">
 
-                    <label for="Num_National">Child National Number*: </label>
-                    <input type="number" name="" id="Num_National" required placeholder="Enter National Number">
-
-
-                    <label for="Phone">Phone Number:*</label>
-                    <input type="number" name="" id="Phone" required placeholder="Enter Phone Number">
-
-                    <label for="Age">Child Age: *</label>
-                    <input type="number" name="" required id="Age" max="8" min="3" placeholder="AGE BETBEEN 3 TO 8">
-
-                    <label for="Gender">Child Gender</label>
-                    <select id="Gender">
-                        <option value="Male" selected>Male</option>
-                        <option value="Female">Female</option>
-                    </select>
-                    <input type="checkbox" name="healthy" id="healthy" value="healthy" checked><label for="healthy">Does
-                        the
-                        child have any health problems?</label>
-                    <input type="submit" value="register">
+                        <label for="Num_National">Child National Number*: </label>
+                        <input type="number" name="" id="Num_National" required placeholder="Enter National Number">
 
 
-                </form>
-            </fieldset>
-        </div>
-        <table class="rwd-table" id="tbl"></table>
-        <br><br><br>
+                        <label for="Phone">Phone Number:*</label>
+                        <input type="number" name="" id="Phone" required placeholder="Enter Phone Number">
+
+                        <label for="Age">Child Age: *</label>
+                        <input type="number" name="" required id="Age" max="8" min="3" placeholder="AGE BETBEEN 3 TO 8">
+
+                        <label for="Gender">Child Gender</label>
+                        <select id="Gender">
+                            <option value="Male" selected>Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <input type="checkbox" name="healthy" id="healthy" value="healthy" checked><label for="healthy">Does
+                            the
+                            child have any health problems?</label>
+                        <input type="submit" value="register" class="sub">
+
+
+                    </form>
+                </fieldset>
+            </div>
         <div>
-            <table class="rwd-table" id="tbl2">
-            </table>
+            <table title="New Student" class="rwd-table" id="tbl"></table>
         </div>
-
+        
+        <section>
+        <div id="one">
+            
+            <table title="all student Name" class="rwd-table" id="tbl2"></table>
+        </div>
+         <div>
+            <h1></h1> 
+           
+            <p id="p"><span style="color:#FFAA4C"></b> Important information <b></span>  </br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad omnis recusandae debitis, adipisci quis ratione. Unde deleniti excepturi recusandae esse magnam provident, iure quisquam reprehenderit, ut quidem at sit nostrum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur asperiores aliquam quis voluptatem ipsa, repellat soluta illo ea ullam enim! Totam neque commodi sequi deleniti voluptates nam possimus ea odio? </p></div>
+        </section>
+        <!-- 
         <div id="list">
         </div>
-
+ -->
 
 
 
@@ -95,7 +101,7 @@
 
     </main>
     <footer id="f"></footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
     <script src="app.js"></script>
 
 </body>
