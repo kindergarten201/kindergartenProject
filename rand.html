@@ -13,6 +13,12 @@
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="CSS/header-style.css">
     <link rel="stylesheet" href="CSS/footer-style.css">
+    <script>
+        $(function () {
+            $("#h").load("header.html");
+            $("#f").load("footer.html");
+        });
+    </script>
 </head>
 
 <body>
@@ -156,12 +162,7 @@
         </section>
         </div>
     </main>
-    <script>
-        $(function () {
-            $("#h").load("header.html");
-            $("#f").load("footer.html");
-        });
-    </script>
+  
     <footer id="f"> </footer>
     <script src="js/gallery.js"></script>
 </body>
