@@ -43,7 +43,6 @@
 }
 
 .wrapper .text {
-    position: relative;
     text-transform: uppercase;
     font-size: 12px;
     opacity: var(--opacity, 1);
