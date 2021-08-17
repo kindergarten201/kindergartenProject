@@ -4,7 +4,7 @@
 main{
   margin-top: 164.8px;
   margin-bottom: 150px;
-  
+
 }
 html{
   width: 100%;
@@ -60,7 +60,9 @@ h2  {
   text-align: center;
 }
 .review{
- 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 500px;
   display: flex;
   float: left;
