@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+        </style>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script>
+            $(function () {
+                $("#h").load("header.html");
+                $("#f").load("footer.html");
+            });
+        </script>
+        <link rel="stylesheet" href="./CSS/reset.css">
+        <link rel="stylesheet" href="./CSS/bodyGame.css">
+    <title> Body Parts Game </title>
+</head>
+<body>
+    <span> <a href="#"> </a> </span>
+    <header id="h"></header>
+    <main>
+        <p id="ques"> What Body Part is This? </p>
+        <section id="buttons">
+<button id="arm"> Arm </button>
+<button id="teeth"> Teeth </button>
+<button id="leg"> Leg </button>
+<button id="ear"> Ear </button>
+<button id="eye"> Eye </button>
+<button id="nose"> Nose </button>
+<button id="knee"> Knee </button>
+<button id="head"> Head </button>
+</section>
+<img src="" alt="" id="hero">
+    </main>
+    <footer id="f">
+
+    </footer>
+    
+</body>
+<script src="./JS/bodyGame.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+</html>
