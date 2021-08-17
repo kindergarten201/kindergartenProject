@@ -12,7 +12,7 @@ body{
 }
 #one{
 height: 700px;
-background-image: url('./img/herooo.jpg');
+background-image: url(../img/herooo.jpg);
 background-size: cover;
  }
  #one h1{
