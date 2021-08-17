@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 body {
-    width: 1300px ;
+    width: 100% ;
     margin:auto ;
     background-color:#f8d311 ;
    
@@ -12,8 +12,14 @@ body {
       background-color: #255ea8;
       height: 1110px;
       margin-top: 164.8px;
-   margin-bottom: 150px;
+      width:1330px;
+      margin-right: auto;
+      margin-left: auto;
+   
       
+  }
+  header{
+    width:100%;
   }
   
 
