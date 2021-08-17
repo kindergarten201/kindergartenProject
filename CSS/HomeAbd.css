@@ -269,7 +269,7 @@ body {
     display: inline-block;
     letter-spacing: 2px;
     width: 100%;
-    margin: auto auto;
+    margin: auto;
     
 }
 .team-title h5 {
@@ -286,10 +286,11 @@ body {
     color: #a5a5a5;
     letter-spacing: 1px;
     
-    
+    text-align: center;
+    margin: auto;
+
 }
 
  
 .sp{
-    padding-left: 700px;
-}
+    padding-left: 960px;
