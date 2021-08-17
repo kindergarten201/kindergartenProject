@@ -41,7 +41,7 @@ function render(){
     if( i<rounds  ){
     let randomImage = random(0 , partsArr.length-1);
     nameAlone=partsArr[randomImage].split( '.' )[0];
-    image.src = '../img/' + Body.all[randomImage].src;
+    image.src = './/img/' + Body.all[randomImage].src;
     i++;
     console.log(i);
      //console.log(i)

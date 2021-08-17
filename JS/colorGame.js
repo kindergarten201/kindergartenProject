@@ -51,9 +51,9 @@ function render() {
   
 
 
-  leftImage.src = '../img/' + Color.all[leftRandom].src;
-  middleImage.src = '../img/' + Color.all[middleRandom].src;
-  rightImage.src = '../img/' + Color.all[rightRandom].src;
+  leftImage.src = './/img/' + Color.all[leftRandom].src;
+  middleImage.src = './/img/' + Color.all[middleRandom].src;
+  rightImage.src = './/img/' + Color.all[rightRandom].src;
 
   let k=[leftRandom, middleRandom, rightRandom];
 

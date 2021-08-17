@@ -54,7 +54,7 @@ do {
 while( randomNum == previous[previous.valuelength-1]);
 
 nameAlone=numArr[randomNum].split( '.' )[0];
-img.src = '../img/' + Numbers.all[randomNum].src;
+img.src = './/img/' + Numbers.all[randomNum].src;
 previous.push(answer.value);
 
 console.log(previous);
