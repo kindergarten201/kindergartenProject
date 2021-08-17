@@ -1,6 +1,4 @@
-let mirrorBtn = document.getElementById('mirror-activity');
-let wheelBtn = document.getElementById('wheel-activity');
-let iceCreamBtn = document.getElementById('ice-cream-activity');
+
 
 let container = document.getElementById('sec-1');
 
@@ -33,7 +31,7 @@ for (let index = 0; index < names.length; index++) {
 }
 
 //////////////////////////////////////////// mirror section //////////////////////////////////////////////////////////
-mirrorBtn.addEventListener('click', mirrorSecCreate);
+////mirrorBtn.addEventListener('click', mirrorSecCreate);
 
 function mirrorSecCreate() {
   let check = document.getElementsByClassName('sec-1-1');
@@ -44,15 +42,7 @@ function mirrorSecCreate() {
 
     if (isOpend !== 1) {
       isOpend = 1;
-      let sec1 = document.createElement('section');
-      sec1.className = 'sec-1-1';
-      container.appendChild(sec1);
-      let h4 = document.createElement('h4');
-      h4.textContent = names[0];
-      sec1.appendChild(h4);
-      let p = document.createElement('p');
-      p.textContent = discriptions[0];
-      sec1.appendChild(p);
+
 
       let sec2 = document.createElement('section');
       sec2.className = 'sec-1-2';
@@ -63,20 +53,21 @@ function mirrorSecCreate() {
       vid.src = vidSrcs[0];
       vid.allowfullscreen = '';
       vid.frameborder = '0';
-
       sec2.appendChild(vid);
+
+      let sec1 = document.createElement('section');
+      sec1.className = 'sec-1-1';
+      container.appendChild(sec1);
+      let h4 = document.createElement('h4');
+      h4.textContent = names[0];
+      sec1.appendChild(h4);
+      let p = document.createElement('p');
+      p.textContent = discriptions[0];
+      sec1.appendChild(p);
     }
   } else {
     isOpend = 1;
-    let sec1 = document.createElement('section');
-    sec1.className = 'sec-1-1';
-    container.appendChild(sec1);
-    let h4 = document.createElement('h4');
-    h4.textContent = names[0];
-    sec1.appendChild(h4);
-    let p = document.createElement('p');
-    p.textContent = discriptions[0];
-    sec1.appendChild(p);
+
 
     let sec2 = document.createElement('section');
     sec2.className = 'sec-1-2';
@@ -87,14 +78,23 @@ function mirrorSecCreate() {
     vid.src = vidSrcs[0];
     vid.allowfullscreen = '';
     vid.frameborder = '0';
-
     sec2.appendChild(vid);
+
+    let sec1 = document.createElement('section');
+    sec1.className = 'sec-1-1';
+    container.appendChild(sec1);
+    let h4 = document.createElement('h4');
+    h4.textContent = names[0];
+    sec1.appendChild(h4);
+    let p = document.createElement('p');
+    p.textContent = discriptions[0];
+    sec1.appendChild(p);
   }
 }
 
 /////////////////////////////////////// wheel section /////////////////////////////////////////////////////////////////
 
-wheelBtn.addEventListener('click', wheelSecCreate);
+//wheelBtn.addEventListener('click', wheelSecCreate);
 
 function wheelSecCreate() {
   let check = document.getElementsByClassName('sec-1-1');
@@ -105,15 +105,7 @@ function wheelSecCreate() {
 
     if (isOpend !== 2) {
       isOpend = 2;
-      let sec1 = document.createElement('section');
-      sec1.className = 'sec-1-1';
-      container.appendChild(sec1);
-      let h4 = document.createElement('h4');
-      h4.textContent = names[1];
-      sec1.appendChild(h4);
-      let p = document.createElement('p');
-      p.textContent = discriptions[1];
-      sec1.appendChild(p);
+
 
       let sec2 = document.createElement('section');
       sec2.className = 'sec-1-2';
@@ -124,20 +116,22 @@ function wheelSecCreate() {
       vid.src = vidSrcs[1];
       vid.allowfullscreen = '';
       vid.frameborder = '0';
+      sec2.appendChild(vid);
 
+      let sec1 = document.createElement('section');
+      sec1.className = 'sec-1-1';
+      container.appendChild(sec1);
+      let h4 = document.createElement('h4');
+      h4.textContent = names[1];
+      sec1.appendChild(h4);
+      let p = document.createElement('p');
+      p.textContent = discriptions[1];
+      sec1.appendChild(p);
       sec2.appendChild(vid);
     }
   } else {
     isOpend = 2;
-    let sec1 = document.createElement('section');
-    sec1.className = 'sec-1-1';
-    container.appendChild(sec1);
-    let h4 = document.createElement('h4');
-    h4.textContent = names[1];
-    sec1.appendChild(h4);
-    let p = document.createElement('p');
-    p.textContent = discriptions[1];
-    sec1.appendChild(p);
+
 
     let sec2 = document.createElement('section');
     sec2.className = 'sec-1-2';
@@ -148,15 +142,24 @@ function wheelSecCreate() {
     vid.src = vidSrcs[1];
     vid.allowfullscreen = '';
     vid.frameborder = '0';
-
     sec2.appendChild(vid);
+
+    let sec1 = document.createElement('section');
+    sec1.className = 'sec-1-1';
+    container.appendChild(sec1);
+    let h4 = document.createElement('h4');
+    h4.textContent = names[1];
+    sec1.appendChild(h4);
+    let p = document.createElement('p');
+    p.textContent = discriptions[1];
+    sec1.appendChild(p);
   }
 }
 
 /////////////////////////////////// ice cream section ////////////////////////////////////////////////////////////////////
 
 
-iceCreamBtn.addEventListener('click', iecSecCreate);
+//iceCreamBtn.addEventListener('click', iecSecCreate);
 
 function iecSecCreate() {
   let check = document.getElementsByClassName('sec-1-1');
@@ -166,15 +169,7 @@ function iecSecCreate() {
 
     if (isOpend !== 3) {
       isOpend = 3;
-      let sec1 = document.createElement('section');
-      sec1.className = 'sec-1-1';
-      container.appendChild(sec1);
-      let h4 = document.createElement('h4');
-      h4.textContent = names[2];
-      sec1.appendChild(h4);
-      let p = document.createElement('p');
-      p.textContent = discriptions[2];
-      sec1.appendChild(p);
+
 
       let sec2 = document.createElement('section');
       sec2.className = 'sec-1-2';
@@ -185,20 +180,21 @@ function iecSecCreate() {
       vid.src = vidSrcs[2];
       vid.allowfullscreen = '';
       vid.frameborder = '0';
-
       sec2.appendChild(vid);
+
+      let sec1 = document.createElement('section');
+      sec1.className = 'sec-1-1';
+      container.appendChild(sec1);
+      let h4 = document.createElement('h4');
+      h4.textContent = names[2];
+      sec1.appendChild(h4);
+      let p = document.createElement('p');
+      p.textContent = discriptions[2];
+      sec1.appendChild(p);
     }
   } else {
     isOpend = 3;
-    let sec1 = document.createElement('section');
-    sec1.className = 'sec-1-1';
-    container.appendChild(sec1);
-    let h4 = document.createElement('h4');
-    h4.textContent = names[2];
-    sec1.appendChild(h4);
-    let p = document.createElement('p');
-    p.textContent = discriptions[2];
-    sec1.appendChild(p);
+
 
     let sec2 = document.createElement('section');
     sec2.className = 'sec-1-2';
@@ -209,7 +205,16 @@ function iecSecCreate() {
     vid.src = vidSrcs[2];
     vid.allowfullscreen = '';
     vid.frameborder = '0';
-
     sec2.appendChild(vid);
+
+    let sec1 = document.createElement('section');
+    sec1.className = 'sec-1-1';
+    container.appendChild(sec1);
+    let h4 = document.createElement('h4');
+    h4.textContent = names[2];
+    sec1.appendChild(h4);
+    let p = document.createElement('p');
+    p.textContent = discriptions[2];
+    sec1.appendChild(p);
   }
 }

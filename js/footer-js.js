@@ -9,9 +9,9 @@ function subscribFun(event) {
   let userEmail = event.srcElement[0].value;
   
   if (userEmail.match(mailformat)) {
-    alert('You are regesterd now');
+    Swal.fire('You are regesterd now');
   }
   else {
-    alert(' please enter a valid email ');
+    Swal.fire(' please enter a valid email ');
   }
 }
