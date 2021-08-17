@@ -89,7 +89,7 @@ gap: 15px;
         /* width: 180px; */
         background-color: #fe5f97;
         border-color: #fe5f97;
-        position: relative;
+        /* position: relative; */
         text-align: center;
         z-index: 1;
         transition: .3s;
@@ -124,7 +124,7 @@ float: right;
     /* width: 200px; */
     background-color: #32cfbc;
     border-color: #32cfbc ;
-    position: relative;
+    /* position: relative; */
     text-align: center;
     z-index: 1;
     transition: .3s;
@@ -228,7 +228,7 @@ grid-template-columns: 1fr 1fr;
   /* width: 200px; */
   background-color: #255ea8;
   border-color: #255ea8;
-  position: relative;
+  /* position: relative; */
   text-align: center;
   z-index: 1;
   transition: .3s;
