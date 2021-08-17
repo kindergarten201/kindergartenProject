@@ -20,11 +20,11 @@
     font-size: 25px;
     font-family: 'Recursive', sans-serif;
     font-weight: 600;
-    color: crimson;
+    color: #0CECDD;
 }
 
 .btn {
-    background-color: crimson;
+    background-color: #0CECDD;
     font-size: 15px;
     display: flex;
     -webkit-box-pack: center;
@@ -40,7 +40,7 @@
 /* ///////////////////////////////// */
 
 #header {
-    width: 1300px;
+    width:1300px;
     margin: 10px 20px;
     display: grid;
     grid-template-columns: 100px 700px 300px;
@@ -50,10 +50,9 @@
     border: white inset 3px;
     border-radius: 50px;
     height: 100px;
-    width: 1300px;
+    width: 100%;
     margin: 10px auto;
-    background-color: rgb(255,255,68);
-    color: crimson;
+    background-color: rgb(76,56,75);
 }
 
 #header img, h1 {
@@ -76,15 +75,15 @@
 
 @keyframes float {
     0% {
-        box-shadow: 0 5px 15px 0px crimson;
+        box-shadow: 0 5px 15px 0px #0CECDD;
         transform: translatey(0px);
     }
     50% {
-        box-shadow: 0 25px 15px 0px crimson;
+        box-shadow: 0 25px 15px 0px #0CECDD;
         transform: translatey(-30px);
     }
     100% {
-        box-shadow: 0 5px 15px 0px crimson;
+        box-shadow: 0 5px 15px 0px #0CECDD;
         transform: translatey(0px);
     }
 }
@@ -114,7 +113,7 @@
 
 .words {
     margin-left: 50px;
-    color: crimson;
+    color: #3eaaa3;
     ;
     font-size: 0;
     line-height: 1;

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
 #contact-us a {
     text-decoration: none;
-    color: crimson;
+    color: #96BAFF;
     font-size: 20px;
     font-family: 'Recursive', sans-serif;
     font-weight: 600;
@@ -13,12 +13,12 @@
     height: 220px;
     margin: 10px auto;
     overflow: hidden;
-    background-color: rgb(255,255,68);
+    background-color: rgb(76, 56, 75);
     display: grid;
     grid-template-rows: 1fr 2px 1fr;
     border: white inset 3px;
     border-radius: 50px;
-    color: crimson;
+    color:  #96BAFF;
     font-size: 20px;
     font-family: 'Recursive', sans-serif;
     font-weight: 600;
@@ -45,7 +45,7 @@
 }
 
 form>input, label {
-    color: rgb(255, 255, 68);
+    color: rgb(76, 56, 75);
     display: block;
 }
 
@@ -69,7 +69,7 @@ form>input, label {
 .footerRow2 p {
     text-align: center;
     font-size: 15px;
-    color: crimson;
+    color:  #96BAFF;
 }
 
 #footer {
@@ -78,7 +78,7 @@ form>input, label {
 
 .footerRow1 h4 {
     font-size: 25px;
-    color: crimson;
+    color:  #96BAFF;
     font-family: 'Recursive', sans-serif;
     font-weight: 600;
     text-align: left;
@@ -120,9 +120,9 @@ form>input, label {
     cursor: pointer;
     font-size: 10px;
     letter-spacing: 4px;
-    background-color: crimson;
+    background-color:  #96BAFF;
     border-radius: 10px 30px 10px 30px;
-    color: rgb(255, 255, 68);
+    color: rgb(76, 56, 75);
     margin: 20px auto;
     padding: 10px;
     width: 100px;
@@ -133,13 +133,13 @@ form>input, label {
 
 .button:hover {
     background: #fff;
-    box-shadow: 0px 2px 10px 5px crimson;
+    box-shadow: 0px 2px 10px 5px  #96BAFF;
     color: #000;
 }
 
 .button:after {
     content: "";
-    background-color: crimson;
+    background-color: #0CECDD;
     display: block;
     position: absolute;
     opacity: 0;
@@ -161,7 +161,7 @@ form>input, label {
     position: relative;
     ;
     display: block !important;
-    background-color: crimson;
+    background-color:  #96BAFF;
     color: white;
     border-radius: 10px 30px 10px 30px;
     height: 20px;
