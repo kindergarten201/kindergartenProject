@@ -53,30 +53,33 @@ li{
 }
  h1  {
   text-align: center;
+  text-shadow: 0.02em 0.02em 0 rgb(241, 233, 233), 0 0 0.5em violet;
 
 
 }
 h2  {
   text-align: center;
+  text-shadow: 0.02em 0.02em 0 rgb(241, 233, 233), 0 0 0.5em violet;
 }
 .review{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 500px;
+  height: 800px;
   display: flex;
   width: 100%;
   background-color: #fe5f97;
   color: #5c0b27;
 }
 
-button {
+.button {
   
   border-radius: 100px;
   padding: 20px 60px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.45em;
+  font-weight: bold;
   margin: 0 15px;
  
   border-color: black;
@@ -228,7 +231,7 @@ margin-left: 30px;
 }
 
 .scroll h3{ color: #5c0b27;
-font-size: 15px;
+font-size: 16px;
 font-weight: bold;
 text-decoration-line: underline;
 padding: 10px 0;
@@ -237,10 +240,11 @@ margin-top: 20px;
 }
 .scroll h4{ 
  
-  font-size: 10px;
+  font-size: 12px;
 }
 .scroll p{color:black;
 font-size: 15px;
+font-weight: bold;
 padding-bottom: 10px;
 }
 
