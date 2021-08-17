@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
@@ -17,12 +19,7 @@
 }
 
 
-main {
-    margin: 0px;
-    background-color: #0CECDD ;
-    border-radius: 10px;
-    padding: 20px;
-}
+
 
 .wrapper .video {
     overflow: hidden;
@@ -183,12 +180,7 @@ main {
     margin: 25px 0px;
 }
 
-body {
-    width:1300px;
-    font-family: 'Oswald', sans-serif; 
-    margin: auto;
-  
-}
+
 .links{
     margin: 25px auto;
     padding: 25px 0px;
@@ -315,4 +307,17 @@ h3 {
 
 .img-sec-h  {
     margin: 25px 0px;
+}
+body {
+    width:100%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+header{
+    margin-bottom: 50px;
+}
+
+main {
+    margin: 20px 0px;
+    padding: 20px;
 }
