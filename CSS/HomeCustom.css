@@ -8,7 +8,7 @@ body{
 }
 #one{
 height: 700px;
-background-image: url('/img/hero.jpeg');
+background-image: url('./img/hero.jpeg');
 background-size: cover;
  }
  #one h1{
