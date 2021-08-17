@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
-#contact-us a {
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/* #contact-us a {
     text-decoration: none;
     color: #96BAFF;
     font-size: 20px;
@@ -13,7 +14,7 @@
     height: 220px;
     margin: 10px auto;
     overflow: hidden;
-    background-color: rgb(76, 56, 75);
+    background-color: midnightblue;
     display: grid;
     grid-template-rows: 1fr 2px 1fr;
     border: white inset 3px;
@@ -165,4 +166,174 @@ form>input, label {
     color: white;
     border-radius: 10px 30px 10px 30px;
     height: 20px;
+} */
+
+.footerRow1 {
+    background-color: steelblue;
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.footerRow2 {
+    background-color: midnightblue;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 200px 1fr;
+ 
+}
+
+.footerRow1 h1 {
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.footerRow2 h1 {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Montserrat', sans-serif;;
+    font-size: 40px;
+    margin-top: 20px;
+    color: whitesmoke;
+}
+
+#email-form {
+    overflow: hidden;
+    width: 100%;
+}
+
+#email-form>input, #email-form>button {
+    display: block;
+    margin: auto;
+}
+
+#email-form>input {
+    width: 70%;
+    height: 40px;
+    margin: 30px;
+    border-radius: 30px;
+    background-color: steelblue;
+    color: white;
+    border: white 2px solid;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#email-form>input::placeholder {
+    color: white;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#email-form>input:focus {
+    background-color: white;
+    color: steelblue;
+}
+
+#email-form>button {
+    width: 15%;
+    height: 50px;
+    margin: 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: #fe5f97;
+    color: white;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#email-form>button:focus {
+    border: 2px #fe5f97 solid;
+    background-color: midnightblue;
+    color: white;
+}
+
+#logo2 {
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    margin: 50px;
+}
+
+/* .footerRow2 h1{
+padding-top:150px ;
+} */
+
+.sotial-icon img {
+    width: 40px;
+    height: 40px;
+    margin: 1px;
+    display: inline-block;
+    padding: 1px;
+}
+
+.sotial-icon {
+    padding: 0px;
+}
+
+/* , .footerRow2-1 > .pages , .footerRow2-1 > .times , .footerRow2-1 > .con */
+
+.footerRow2-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: stretch;
+}
+
+.footerRow2-1 h1 {
+    margin-top: 50px;
+}
+
+.footerRow2-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.con img {
+    width: 40px;
+    height: 40px;
+}
+
+.pages a ,  .times h4 , .con a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+    width:120px;
+    padding: 5px 10px;
+    font-size: 17px;
+    margin: 5px 20px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;;
+    font-weight: 600;
+}
+
+.con a {
+   
+    line-height: 2;
+    width: 90%;
+}
+.con a img{
+    width: 30px;
+    height: 30px;
+}
+.times h4{
+    padding: 5px 0px;
+    margin: 5px 0px;
+    border-radius: 0px;
+    width:100%;
+}
+
+.pages a:hover, .pages a:active {
+    background: #fe5f97;
+    color: white;
 }
