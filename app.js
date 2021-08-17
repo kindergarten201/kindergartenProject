@@ -77,7 +77,7 @@ function FormMethod(e) {
   DeleteForm();
   Rendertbl();
   RenderTable2();
-  rendringlist()
+  //rendringlist()
  }
 //  function DeleteForm()
 function DeleteForm() {
@@ -254,8 +254,12 @@ function validateFormName(test) {
   for (let i = 0; i < test.length; i++)
     if (Number.isInteger(Number(test[i]))) {
       document.getElementById("f_Name").style.borderColor = "red";
-      alert("First Name And Last Name must dont have numbers ")
-      break;
+     // alert("First Name And Last Name must dont have numbers ")
+     Swal.fire(
+      'Try Again!',
+      'First Name And Last Name must dont have numbers',
+      'warning');
+     break;
 
     }
     else {
@@ -267,8 +271,11 @@ function validateFormName(test) {
 function validateFormNumber(testNumber, id) {
   if (testNumber.length != 10) {
     document.getElementById(id).style.borderColor = "red";
-    alert(id + "This field must contain 10 numbers")
-
+    //alert(id + "This field must contain 10 numbers")
+    Swal.fire(
+      'Try Again!',
+      id + 'This field must contain 10 numbers',
+      'warning');
   } else {
     counter++;
     return testNumber;
@@ -288,50 +295,50 @@ function getItem() {
 }
 let divlist=document.getElementById('list')
 
-function rendringlist()
-{  
-  let h1E=document.createElement('h1');
+// function rendringlist()
+// {  
+//   let h1E=document.createElement('h1');
   
-   divlist.appendChild(h1E);
+//    divlist.appendChild(h1E);
 
-   let olE1=document.createElement('ol');
-    divlist.appendChild(olE1);
+//    let olE1=document.createElement('ol');
+//     divlist.appendChild(olE1);
 
-    let liE1=document.createElement('li');
-     liE1.textContent ='Birth date certificate'
-     olE1.appendChild(liE1);
+//     let liE1=document.createElement('li');
+//      liE1.textContent ='Birth date certificate'
+//      olE1.appendChild(liE1);
  
-     let liE2=document.createElement('li');
-     liE2.textContent ='Two Personal Photo'
-     olE1.appendChild(liE2);
+//      let liE2=document.createElement('li');
+//      liE2.textContent ='Two Personal Photo'
+//      olE1.appendChild(liE2);
  
-     let liE3=document.createElement('li');
-     liE3.textContent ='Vaccine certificates'
-     olE1.appendChild(liE3);
-     let liE4=document.createElement('li');
-     liE4.textContent ='parents personal identification'
-     olE1.appendChild(liE4);
+//      let liE3=document.createElement('li');
+//      liE3.textContent ='Vaccine certificates'
+//      olE1.appendChild(liE3);
+//      let liE4=document.createElement('li');
+//      liE4.textContent ='parents personal identification'
+//      olE1.appendChild(liE4);
 
-     let h2E=document.createElement('h1');
-     divlist.appendChild(h2E);
+//      let h2E=document.createElement('h1');
+//      divlist.appendChild(h2E);
 
-    let olE2=document.createElement('ol');
-    divlist.appendChild(olE2);
+//     let olE2=document.createElement('ol');
+//     divlist.appendChild(olE2);
 
-     let liE11=document.createElement('li');
-     liE11.textContent ='Birth date certificate'
-     olE2.appendChild(liE11);
+//      let liE11=document.createElement('li');
+//      liE11.textContent ='Birth date certificate'
+//      olE2.appendChild(liE11);
  
-     let liE12=document.createElement('li');
-     liE12.textContent ='Two Personal Photo'
-     olE2.appendChild(liE12);
+//      let liE12=document.createElement('li');
+//      liE12.textContent ='Two Personal Photo'
+//      olE2.appendChild(liE12);
  
-     let liE13=document.createElement('li');
-     liE13.textContent ='Vaccine certificates'
-     olE2.appendChild(liE13);
+//      let liE13=document.createElement('li');
+//      liE13.textContent ='Vaccine certificates'
+//      olE2.appendChild(liE13);
      
-     let liE14=document.createElement('li');
-     liE14.textContent ='parents personal identification'
-     olE2.appendChild(liE14);
+//      let liE14=document.createElement('li');
+//      liE14.textContent ='parents personal identification'
+//      olE2.appendChild(liE14);
  
-}
+// }
