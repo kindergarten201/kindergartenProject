@@ -1,7 +1,7 @@
 'use strict'
 
 let parts=['arm','ear','eye','nose','leg','head','knee','teeth'];
-let partsArr=['arm.jpg','ear.jpg','eye.jpg','head.jpg','leg.jpg','nose.jpg','teeth.png','knee.jpeg'];
+let partsArr=['arm.jpg','ear.jpg','eye.jpg','head.jpg','leg.png','nose.jpg','teeth.png','knee.jpeg'];
 let arm = document.getElementById('arm');
 let ear = document.getElementById('ear');
 let eye = document.getElementById('eye');
@@ -43,17 +43,21 @@ function render(){
     nameAlone=partsArr[randomImage].split( '.' )[0];
     image.src = '../img/' + Body.all[randomImage].src;
     i++;
+    console.log(i);
      //console.log(i)
     // console.log(partsArr[randomImage])
-    } else if (i == rounds){
-        let user=prompt('Please Tell Me Your Name ?');
-        Swal.fire(`${user}  you Scored ${correct} Out Of ${rounds}`)
-    
-}}
+    }
+    if (i==rounds){
+      Swal.fire(
+        'Good job!',
+        `You Got ${correct} Answers Out Of ${rounds}!`,
+        'success');
+    } }
 render();
 
 buttons.addEventListener( 'click', clicked );
 function clicked( event ) {
+  if(i<rounds){
    if( event.target.id === nameAlone){
     Swal.fire(
         'Good job!',
@@ -66,11 +70,9 @@ function clicked( event ) {
         'Try Again',
         'You Got The Wrong Answer!',
         'error');
-        render()
-   }
+        render();
+   }}
 }
-
-
 
 
 

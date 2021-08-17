@@ -49,12 +49,15 @@ function addAnswer(Event){
             genQues();
         }
     else if (answers[answers.length-1] == ''){
-        alert('Please Enter a Letter')
+        Swal.fire(
+            'Try Again!',
+            'You Didnt Enter a Value',
+            'warning')
     }
     else if(alpha[index-1] != answers[answers.length-1]) {
         
         Swal.fire(
-            'Try Again',
+            'Try Again!',
             'Hint: we only accept letters in this box',
             'error');
             
