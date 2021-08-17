@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oswald&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
 
-.wrapper {
+ .wrapper {
     --color: #1f242d;
     --color-invert: #fff;
     --clip-path: circle(15px at left);
@@ -25,7 +25,7 @@
     overflow: hidden;
     justify-content: right;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 200px;
     clip-path: var(--clip-path);
     transition: clip-path var(--duration) var(--timing-function);
 }
@@ -45,19 +45,17 @@
 .wrapper .text {
     position: relative;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 0.2px;
+    font-size: 12px;
     opacity: var(--opacity, 1);
     transition: opacity 0.3s var(--timing-function) 0.2s;
     cursor: pointer;
     background-color: rgb(76, 56, 75);
-    border-radius: 10px 30px 10px 30px;
-    color: rgb(255, 255, 68);
     margin: 20px auto;
+    border-radius: 5px;
     padding: 10px;
     text-align: center;
     overflow: hidden;
+    width: 200px;
 }
 
 .wrapper .text::before, .wrapper .text::after {
@@ -162,8 +160,8 @@
 .wrapper input:checked~.text>span::after {
     clip-path: var(--clip-path-clicked);
 }
-
-#sec-1, .sec-2, .sec-3 {
+/*
+#sec-1 {
     display: grid;
     grid-template-columns: 2fr 1fr;
     margin: 20px 0px;
@@ -181,14 +179,6 @@
 }
 
 
-.links{
-    margin: 25px auto;
-    padding: 25px 0px;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap : 50px ;
-}
 .img-sec-btn{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
@@ -215,8 +205,7 @@
 }
 
 main h3, h4, h6 {
-    font-family: 'Lobster', cursive;
-    font-weight: normal;
+    font-family:'Montserrat', sans-serif;
     color: #086972;
 }
 
@@ -243,31 +232,6 @@ h3 {
     padding: 20px;
 }
 
-.links>a  {
-    box-shadow: #223808;
-    display: inline-block;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background-color: rgb(76, 56, 75);
-    border-radius: 10px 30px 10px 30px;
-    color: #EDF4F2;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    transition-duration: 0.4s;
-    overflow: hidden;
-    text-decoration: none;
-}
-
-.links>a:hover{
-    
-
-    background: #fff;
-    box-shadow: 0px 2px 10px 5px rgb(76, 56, 75);
-    color: #000;
-}
 
 
 .img-sec {
@@ -307,17 +271,147 @@ h3 {
 
 .img-sec-h  {
     margin: 25px 0px;
-}
+} */
+
+
+/* ////////////////////////////////// new style ////////////////////////////////////// */
 body {
     width:100%;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    color: #FFF5FD;
+    /* background-image: url("https://www.unicef.org/northmacedonia/sites/unicef.org.northmacedonia/files/styles/hero_desktop/public/x44_2.jpg?itok=u601LaJy"); */
+background-color: #FF96AD;
 }
+
+.links{
+    margin: 25px auto;
+    padding: 25px 0px;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap : 50px ;
+}
+
+.links>a  {
+    box-shadow: #223808;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: rgb(76, 56, 75);
+    color: #EDF4F2;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    overflow: hidden;
+
+}
+
+.links>a:hover{
+    background: #fff;
+    box-shadow: 0px 2px 10px 5px rgb(76, 56, 75);
+    color: #000;
+}
+
+h6 {
+    font-size: 15px;
+}
+h4 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}
+h1 {
+    font-size: 40px;
+    
+}
+
 header{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 main {
-    margin: 20px 0px;
-    padding: 20px;
+   
+   margin-top: 164.8px;
+   margin-bottom: 150px;
+
 }
+main h3 , main h6{
+     text-align: center;
+     margin: 20px;
+ }
+
+.img-sec{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+gap: 90px;
+margin:20px 100px;
+}
+
+.img-sec img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin:30px;
+    border-radius: 5px;
+    
+}
+.img-sec h4{
+    width: 50%;
+    display: block;
+    margin:20px auto;
+    text-align: center;
+}
+
+.img-sec1 , .img-sec2 , .img-sec3 {
+    background-color: cadetblue;
+}
+
+#sec-1 {
+   width: 90%;
+   margin: 20px 0px;
+   padding: 10px;
+}
+
+.sec-1-2{
+    overflow: hidden;
+    margin: 25px 0px;
+}
+
+.sec-1-2>iframe{
+    width: 80%;
+    height: 500px;
+    border-radius: 5px;
+    border: #EDF4F2 3px groove;
+    margin-right:auto ;
+    margin-left: auto;
+    display: block;
+}
+
+.sec-1-1 {
+    padding: 20px;
+    border: #EDF4F2 3px groove;
+    width: 80%;
+     margin-right:auto ;
+    margin-left: auto;
+}
+
+
+
+.sec-1-1 p ,.sec-1-1 h4{
+    padding: 5px;
+    line-height: 1.7;
+   }
+   #f{
+       display: flex;
+   }
