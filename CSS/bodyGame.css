@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
 body{
-  background-color: rgb(255, 255, 68);
+  background-color: #f8d311;
   
 }
 main{
@@ -19,11 +23,11 @@ margin: auto;
 }
 #ques {
    
-    font-family: 'Modak', cursive;
+  font-family: 'Montserrat', sans-serif;
     margin: auto;
     padding: 30px;
     font-size: 75px;
-    color: #F5A31A;
+    color: #fe5f97;
     
     
 }
@@ -59,7 +63,7 @@ margin: auto;
   }
   body {
     width: 100%;
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 2;
     /* display: flex; */
@@ -74,21 +78,22 @@ margin: auto;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 4px;
-    background-color: #F5A31A;
+    background-color: #1abc9c;
     border-radius: 10px 30px 10px 30px;
-    color: #fff;
+    color: black;
     margin:  auto;
     padding: 10px;
     width: 120px;
     text-align: center;
     transition-duration: 0.4s;
     overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
   }
   
   button:hover {
-    background: #fff;
+    background: #255ea8;
     box-shadow: 0px 2px 10px 5px #1abc9c;
-    color: #000;
+    color: white;
   }
   
   button:after {
@@ -124,9 +129,9 @@ margin: auto;
     text-align: center;
     margin: 40px 40px;
     background-color: #fff;
-    border: 8px solid #333;
+    border: 8px solid #fe5f97;
     border-radius: 30px;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 20px;
     font-size: large;
     width: 700px;
@@ -145,7 +150,7 @@ margin: auto;
     left: 30px;
     bottom: -50px;
     border: 25px solid;
-    border-color: #333 transparent transparent #333;
+    border-color: #fe5f97 transparent transparent #fe5f97;
   }
   
   p.speech:after {
@@ -161,9 +166,9 @@ margin: auto;
     cursor: pointer;
     font-size: 10px;
     letter-spacing: 4px;
-    background-color: rgb(255, 255, 68);
+    background-color: #1abc9c;
     border-radius:60px 20px 60px 20px;
-    color: crimson;
+    color: black;
     margin-left: 1000px;
     padding: 10px;
     width: 300px;
@@ -173,14 +178,14 @@ margin: auto;
   }
   
   #back:hover {
-    background: crimson;
-    box-shadow: 0px 2px 10px 5px rgb(255, 255, 68);
+    background: #255ea8;
+    box-shadow: 0px 2px 10px 5px #f8d311;
     color: white;
   }
   
   #back:after {
     content: "";
-    background-color: rgb(255, 255, 68);
+    background-color: #f8d311;
    
     display: block;
     position: absolute;

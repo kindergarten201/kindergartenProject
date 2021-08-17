@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+
+
 body{
     
-    background-color: rgb(225, 225, 68);
+    background-color: #255ea8;
 }
     
 main {
@@ -24,8 +29,8 @@ main {
     margin: auto;
     padding: 30px;
     font-size: 75px;
-    font-family: 'Modak', cursive;
-    color: crimson;
+    font-family: 'Montserrat', sans-serif;
+    color: #f8d311;
     text-align: center;
     
 }
@@ -39,7 +44,7 @@ main {
   width: 350px;
   border-style: groove;
   border-radius: 3%;
-  box-shadow: 5px 10px crimson;
+  box-shadow: 5px 10px #32cfbc;
   margin-left: 20px;
 }
 
@@ -206,9 +211,9 @@ main {
       text-align: center;
       margin: 40px 40px;
       background-color: #fff;
-      border: 8px solid #333;
+      border: 8px solid #f8d311;
       border-radius: 30px;
-      font-family: sans-serif;
+      font-family: 'Montserrat', sans-serif;
       padding: 20px;
       font-size: large;
       width: 700px;
@@ -227,7 +232,7 @@ main {
       left: 30px;
       bottom: -50px;
       border: 25px solid;
-      border-color: #333 transparent transparent #333;
+      border-color: #f8d311 transparent transparent #f8d311;
     }
     
     p.speech:after {
@@ -244,9 +249,9 @@ main {
       cursor: pointer;
       font-size: 10px;
       letter-spacing: 4px;
-      background-color: rgb(255, 255, 68);
+      background-color: #fe5f97;
       border-radius:60px 20px 60px 20px;
-      color: crimson;
+      color: #255ea8;
      
       padding: 10px;
       width: 300px;
@@ -256,14 +261,14 @@ main {
     }
     
     button:hover {
-      background: crimson;
+      background: #255ea8;
       box-shadow: 0px 2px 10px 5px rgb(255, 255, 68);
       color: white;
     }
     
     button:after {
       content: "";
-      background-color: rgb(255, 255, 68);
+      background-color: #32cfbc;
      
       display: block;
       position: absolute;

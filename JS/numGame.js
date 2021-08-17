@@ -83,7 +83,10 @@ function addAnswer(event){
             
         }
     else if (answers == ''){
-        alert('Please Enter a Positive number')
+        Swal.fire(
+            'Try Again!',
+            'Please Enter a One Digit Positive Value',
+            'warning');
     }
 
     else if(answers != numbers[randomNum] && i<rounds ) {
@@ -114,14 +117,17 @@ function addition(event){
     let sum = Number(n1.value) + Number(n2.value);
     results.textContent=sum;}
     
-    else { alert('one digit calculator only');
+    else { Swal.fire(
+        'Try Again!',
+        'One digit calculator only!',
+        'warning');
     results.textContent='Result';
     n1.value='';
     n2.value=''; }
     //console.log(results);
 
 }
-
+alert
 minus.addEventListener( 'click' , subtract );
 function subtract(event){
     let sub;
@@ -129,11 +135,19 @@ function subtract(event){
     if (n1.value >= n2.value){
     sub = Number(n1.value) - Number(n2.value);
     results.textContent=sub;}
-    else {alert('First number should be bigger than the second number');
+    else {Swal.fire(
+        'Try Again!',
+        'First number should be bigger than the second number!',
+        'warning');
+        
 results.textContent='Result';
 n1.value='';
 n2.value='';}}
-else { alert('one digit calculator only');
+else { 
+Swal.fire(
+    'Try Again!',
+    'One digit calculator only!',
+    'warning');
     results.textContent='Result';
     n1.value='';
     n2.value='';}
