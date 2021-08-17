@@ -11,7 +11,7 @@ let displayBounding = display.getBoundingClientRect();
 
 let info = document.createElement("div");
 info.id = "info";
-info.textContent = "Mouse scroll or click image to navigate";
+info.textContent = "";
 display.appendChild(info);
 
 let activeItem = 0;
