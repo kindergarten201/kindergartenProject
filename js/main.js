@@ -19,3 +19,21 @@ function initMap(): void {
       map: map,
     });
   }
+
+  var
+  $card = $('card'),
+  currentMousePos = { x: 0, y: 0 },
+  mouseFromCenter = { x: 0, y: 0 };
+  
+  $(document).mousemove(function(event) {
+    var
+    wHeight= $(window).height(),
+    wWidth= $(window).width();
+  
+    currentMousePos.x = event.pageX;
+    currentMousePos.y = event.pageY;
+    mouseFromCenter.x = currentMousePos.x - (wWidth / 2);
+    mouseFromCenter.y = currentMousePos.y - (wHeight / 2);
+    
+    console.log(mouseFromCenter.x +", " + mouseFromCenter.y);
+  });
