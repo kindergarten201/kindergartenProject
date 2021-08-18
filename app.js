@@ -41,7 +41,7 @@ function FormMethod(e) {
   let ma_Name = validateFormName(value4)
  
   let value5 = e.target.National.value;
-  let National = validateFormName(value5)
+    let National = validateFormName(value5)
   
  
  
@@ -51,7 +51,7 @@ function FormMethod(e) {
   let check1 = document.getElementById('Phone').value
   let id = 'Phone'
   let Phone = validateFormNumber(check1, id);
-  
+           
   let Email =  e.target.Email.value;
 
   let Address = e.target.Address.value;
@@ -63,7 +63,7 @@ function FormMethod(e) {
 
   let healthy = e.target.healthy.checked;
 
-  
+
 
 
   
@@ -73,8 +73,8 @@ function FormMethod(e) {
   let savedData = JSON.stringify(Registration.obj)
   //  localStorage.data = JSON.stringify(Registration.obj);
   localStorage.setItem('Regist', savedData)
- 
   DeleteForm();
+ 
   Rendertbl();
   RenderTable2();
   //rendringlist()
@@ -83,11 +83,13 @@ function FormMethod(e) {
 function DeleteForm() {
   if (counter = 2) {
     document.getElementById('main').innerHTML = '';
+    
     //  let fieldset = document.getElementById('fieldset')
     //  document.getElementById('main').remove(fieldset);
 
     // }
   }
+  else{console.log(counter)}
 }
 //Rendertbl
 let divtbl = document.getElementById('tbl')
@@ -276,6 +278,7 @@ function validateFormNumber(testNumber, id) {
       'Try Again!',
       id + 'This field must contain 10 numbers',
       'warning');
+      
   } else {
     counter++;
     return testNumber;
