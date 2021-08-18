@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
 
 body{
-    background-color: #255ea8;}
+    background-color: #255ea8;
+  width:100%}
 
 main{
     width: 1300px;

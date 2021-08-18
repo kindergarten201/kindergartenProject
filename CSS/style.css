@@ -7,7 +7,7 @@
 }
 body {
 
-	background-color: #255ea8;
+	background-color: #f8d311;
   color: white;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
@@ -38,7 +38,7 @@ fieldset {
 	float: left;
   width: 200px;
   font-size: 1em;
-  color: #111;
+  color: midnightblue;
 }
 
 #Form label.mid {
@@ -243,8 +243,14 @@ div:nth-child(2) {
 	padding-left:0px ;
 	
 }
-#p{    height: 275px;
-    width: 660px;}
+#p{   height: 275px;
+  width: 580px;
+  margin: 27px 10px;
+  }
+
+  .show{
+    display: inline-flex;
+  }
 
 
 /* @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);

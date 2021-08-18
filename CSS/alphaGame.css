@@ -12,11 +12,12 @@ main{
   height: 1000px;
   margin: auto;
   margin-top: 164.8px;
+  width: 1300px;
   
 }
 body {
-    width: 1300px ;
-    background-color:#fe5f97;
+    width: 100% ;
+    background-color:#32cfbc;
     margin: auto;
   
     }
@@ -153,7 +154,7 @@ button:focus { outline:0; }
   width: 200px;
   height: 200px;
  margin: auto;
- margin-left: 790px;
+ margin-left: 680px;
     margin-top: -150px;
 }
 

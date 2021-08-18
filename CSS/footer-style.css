@@ -185,10 +185,11 @@ form>input, label {
 
 .footerRow1 h1 {
     font-family: 'Montserrat', sans-serif;;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
     color: whitesmoke;
+    font-size: 28px;
 }
 
 .footerRow2 h1 {
@@ -234,7 +235,7 @@ form>input, label {
     color: steelblue;
 }
 
-#email-form>button {
+#email-form>button{
     width: 15%;
     height: 50px;
     margin: 30px;
@@ -248,11 +249,13 @@ form>input, label {
     text-transform: uppercase;
 }
 
+
 #email-form>button:focus {
     border: 2px #fe5f97 solid;
-    background-color: midnightblue;
+    background-color: #255ea8;
     color: white;
 }
+
 
 #logo2 {
     overflow: hidden;
