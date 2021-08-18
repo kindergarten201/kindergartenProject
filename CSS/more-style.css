@@ -249,6 +249,8 @@ margin:20px 90px;
     height: 300px;
     display: block;
     margin:30px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 5px;
     
 }
