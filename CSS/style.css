@@ -3,25 +3,17 @@
 #amerpro
 {
 	margin-top: 164.8px;
-	margin-bottom: 150px;
-    
+
 }
 body {
 
-
-   display: grid;
-
-   grid-template-rows: 200px auto 200px;
 	background-color: #255ea8;
   color: white;
-  font-size: 100%;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
 }
 
-form {
-
-   
+#Form {   
   width: 552px;
   margin: 40px auto;
 }
@@ -189,9 +181,6 @@ div:nth-child(2) {
    
    #tbl2
    {  
-    display: grid;
-    grid-template-columns: auto;
-    margin-left: 260px;
     min-width: 300px;
     width: 200px;
     margin-top: 5px;  
@@ -201,8 +190,9 @@ div:nth-child(2) {
 	   min-width: 300px;
   }
    
-section
-{ 	display: grid;
+.show
+{ 
+  	display: grid;
 	align-items: center;
       
 	grid-template-columns: 580px auto;
@@ -237,7 +227,7 @@ section
 }
 
 
-section p
+.show p
 {     padding: 10px;
 	width:550px;
     background-color:white ; 
@@ -245,7 +235,7 @@ section p
 	border-radius:4px;
        margin-left: 0px;
 }
-section h1{
+.show h1{
 
 }
 #one 
