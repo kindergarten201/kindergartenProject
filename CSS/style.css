@@ -1,19 +1,16 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
-#amerpro
-{
-	margin-top: 164.8px;
-
+#amerpro {
+  margin-top: 164.8px;
 }
-body {
 
-	background-color: #f8d311;
+body {
+  background-color: #f8d311;
   color: white;
   font-family: 'PT Sans Caption', sans-serif;
   font-weight: 400;
 }
 
-#Form {   
+#Form {
   width: 552px;
   margin: 40px auto;
 }
@@ -34,11 +31,12 @@ fieldset {
 }
 
 #Form label {
-  
-	float: left;
+  float: left;
   width: 200px;
-  font-size: 1em;
+   font-size: 1em;
+
   color: midnightblue;
+
 }
 
 #Form label.mid {
@@ -46,21 +44,21 @@ fieldset {
 }
 
 #Form input, #Form select {
- background: white;
-	border: 2px solid white;
-	color: black;
-	font-family: 'PT Sans Caption', sans-serif;
-	font-size: 1em;
-	font-weight: 400;
-	height: 40px;
-	margin: 0;
-	padding: 0 10px;
-	width: 240px;
- vertical-align: middle;
+  background: white;
+  border: 2px solid white;
+  color: black;
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  height: 40px;
+  margin: 0;
+  padding: 0 10px;
+  width: 240px;
+  vertical-align: middle;
 }
 
 #Form input:hover, #Form select:hover, #Form textarea:hover {
-	border: 2px solid white;
+  border: 2px solid white;
 }
 
 #Form input:focus, form select:focus, #Form textarea:focus {
@@ -83,15 +81,15 @@ fieldset {
   height: auto;
 }
 
- #Form input.sub {
+#Form input.sub {
   width: 200px;
-   background-color: #255ea8;
+  background-color: #255ea8;
   height: 35px;
   border: 1px solid white;
-  color:whitesmoke;
+  color: whitesmoke;
   border-radius: 4px;
+}
 
- }
 /* 
 form textarea {
   width: 240px;
@@ -102,158 +100,150 @@ form textarea {
 	 color: #fff;
 } */
 
-#Form input.submit { 
-	
-	float: left;
+#Form input.submit {
+  float: left;
   margin-left: 200px;
   width: 100px;
   height: 40px;
   color: #255ea8;
 }
 
-#Form input.submit:hover { 
- background: #255ea8;
-	background: -webkit-linear-gradient(#255ea8, #255ea8);	
-	/* background: -moz-linear-gradient(#1d9676, #01caa7);	
+#Form input.submit:hover {
+  background: #255ea8;
+  background: -webkit-linear-gradient(#255ea8, #255ea8);
+  /* background: -moz-linear-gradient(#1d9676, #01caa7);	
 	background: -o-linear-gradient(#1d9676, #01caa7);	
 	background: -ms-linear-gradient(#1d9676, #01caa7);	
 	background: linear-gradient(#1d9676, #01caa7);	
 } */
-
-}
-div:nth-child(2) {
-   
-
 }
 
-
-
+div:nth-child(2) {}
 
 .rwd-table {
-	margin: 5em auto;
-	min-width: 300px;
+  margin: 5em auto;
+  min-width: 300px;
 }
+
 .rwd-table tr {
-	border-top: 1px solid #ddd;
-	border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .rwd-table th {
-	display: none;
+  display: none;
 }
+
 .rwd-table td {
-	display: block;
+  display: block;
 }
+
 .rwd-table td:first-child {
-	padding-top: 0.5em;
+  padding-top: 0.5em;
 }
+
 .rwd-table td:last-child {
-	padding-bottom: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .rwd-table td:before {
-	content: attr(data-th) ": ";
-	font-weight: bold;
-	width: 6.5em;
-	display: inline-block;
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 6.5em;
+  display: inline-block;
 }
+
 @media (min-width: 480px) {
-	.rwd-table td:before {
-		display: none;
-   }
+  .rwd-table td:before {
+    display: none;
+  }
 }
+
 .rwd-table th, .rwd-table td {
-	text-align: left;
+  text-align: left;
 }
+
 @media (min-width: 480px) {
-	.rwd-table th, .rwd-table td {
-		display: table-cell;
-		padding: 0.25em 0.5em;
-   }
-	.rwd-table th:first-child, .rwd-table td:first-child {
-		padding-left: 0;
-   }
-	.rwd-table th:last-child, .rwd-table td:last-child {
-		padding-right: 0;
-   }
-
-
-   
-   #tbl2
-   {  
+  .rwd-table th, .rwd-table td {
+    display: table-cell;
+    padding: 0.25em 0.5em;
+  }
+  .rwd-table th:first-child, .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child, .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  #tbl2 {
     min-width: 300px;
     width: 200px;
-    margin-top: 5px;  
-   }
-   .rwd-table {
-	   margin: 5em auto;
-	   min-width: 300px;
+    margin-top: 5px;
   }
-   
-.show
-{ 
-  	display: grid;
-	align-items: center;
-      
-	grid-template-columns: 580px auto;
-
-}
-
   .rwd-table {
-	
-		height: 300px;
-		background: white;
-		color: #140714;
-		border-radius: 0.4em;
-		overflow: hidden;
-		width: 1000px;
-		margin-bottom: 0px;
-	
-}
-.rwd-table tr {
-   border-color: #46637f;
-   padding-left: 40px;}
-
-   .rwd-table th, .rwd-table td {
-	margin: 0.5em 1em;
-}
-@media (min-width: 480px) {
-	.rwd-table th, .rwd-table td {
-		padding: 1em !important;
-   }
-}
-.rwd-table th, .rwd-table td:before {
-	color: #FFAA4C;
-}
-
-
-.show p
-{     padding: 10px;
-	width:550px;
-    background-color:white ; 
+    margin: 5em auto;
+    min-width: 300px;
+  }
+  .show {
+    grid-template-columns: 300px 500px;
+    display: grid;
+    justify-content: start;
+    padding-left: 250px;
+  }
+  .rwd-table {
+    height: 300px;
+    background: white;
     color: #140714;
-	border-radius:4px;
-       margin-left: 0px;
-}
-.show h1{
-
-}
-#one 
-{
-	padding-left:0px ;
-	
-}
-#p{   height: 275px;
-  width: 580px;
-  margin: 27px 10px;
+    border-radius: 0.4em;
+    overflow: hidden;
+    width: 1000px;
+    margin-bottom: 0px;
+  }
+  .rwd-table tr {
+    border-color: #46637f;
+    padding-left: 40px;
+  }
+  .rwd-table th, .rwd-table td {
+    margin: 0.5em 1em;
+  }
+  @media (min-width: 480px) {
+    .rwd-table th, .rwd-table td {
+      padding: 1em !important;
+    }
+  }
+  .rwd-table th, .rwd-table td:before {
+    color: midnightblue;
+    font-size: 30px;
+   font-family:  'Montserrat', sans-serif;
+  }
+  .show p {
+    padding: 10px;
+    width: 550px;
+    background-color: white;
+    color: #140714;
+    border-radius: 4px;
+    margin-left: 0px;
+  }
+  
+  #one {
+    padding-left: 0px;
+  }
+  #p {
+    width: 580px;
+    margin: 10px 10px;
+    padding: 25px;
+    line-height: 1.5;
   }
 
-  .show{
+  #p span{
+    color: midnightblue;
+    font-size: 30px;
+   font-family:  'Montserrat', sans-serif;
+    line-height: 3;
+  }
+  /* .show {
     display: inline-flex;
-  }
-
-
-/* @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+  } */
+  /* @import url(https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
 
 body {
   display: grid;
