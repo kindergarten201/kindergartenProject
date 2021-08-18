@@ -4,6 +4,7 @@
 
 body{
   background-color: #f8d311;
+  width: 100%;
   
 }
 main{
@@ -11,11 +12,13 @@ main{
     grid-template-rows: 3;
     gap: 30px;
     margin: auto;
-    width: 1300px;
+   
     justify-content: center;
     background-color: white;
     border-radius: 3%;
     margin-top: 164.8px;
+    width: 1300px;
+
   
 
 }

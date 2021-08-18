@@ -4,12 +4,13 @@
 
 
 body{
-    
+  
+  width: 100%;
     background-color: #255ea8;
 }
     
 main {
-    width: 1300px ;
+    
     height: auto;
     margin:auto ;
     background-color:white;
@@ -22,6 +23,7 @@ main {
     border-bottom: 50px;
     justify-content: center;
     margin-top: 164.8px;
+    width: 1300px;
    
     }
 
