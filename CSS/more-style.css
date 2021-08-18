@@ -267,8 +267,8 @@ margin:20px 90px;
 
 #sec-1 {
    width: 90%;
-   margin: 20px 0px;
    padding: 10px;
+   margin: auto;
 }
 
 .sec-1-2{
@@ -287,11 +287,12 @@ margin:20px 90px;
 }
 
 .sec-1-1 {
-    padding: 20px;
+    padding: 15px;
     border: #EDF4F2 3px groove;
-    width: 80%;
-     margin-right:auto ;
+    width: 79%;
+    margin-right:auto ;
     margin-left: auto;
+    color: #255ea8;
 }
 
 

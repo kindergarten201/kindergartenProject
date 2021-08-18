@@ -44,6 +44,7 @@
 #logo >img{
     width: 200px;
     height: 100px;
+    object-fit: contain;
 }
 .scrolled{
   background-color: white;

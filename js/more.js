@@ -42,8 +42,6 @@ function mirrorSecCreate() {
 
     if (isOpend !== 1) {
       isOpend = 1;
-
-
       let sec2 = document.createElement('section');
       sec2.className = 'sec-1-2';
       container.appendChild(sec2);
