@@ -31,7 +31,6 @@ for (let index = 0; index < names.length; index++) {
 }
 
 //////////////////////////////////////////// mirror section //////////////////////////////////////////////////////////
-////mirrorBtn.addEventListener('click', mirrorSecCreate);
 
 function mirrorSecCreate() {
   let check = document.getElementsByClassName('sec-1-1');
