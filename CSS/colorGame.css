@@ -75,7 +75,7 @@ main {
       /**
        * Clouds
        */
-      .clouds {
+      /* .clouds {
         position: absolute;
         top: 0;
         left: 0;
@@ -92,7 +92,7 @@ main {
         right: 0;
         opacity: 1;
         /* height: 430px; */
-       
+/*        
 
       }
       
@@ -107,9 +107,9 @@ main {
       .cloud.background {
         z-index: 1;
       }
-      
+       */
       /*Cloud Sizing*/
-      .cloud.smaller {
+      /* .cloud.smaller {
         margin-right: 400px;
         width: 100px;
         margin-top: 50px;
@@ -177,7 +177,7 @@ main {
         -moz-animation-duration: 20.5s;
         animation-duration: 20.5s;
       }
-      
+       */
       @-webkit-keyframes cloud-movement {
         0% {
           opacity: 0.1;
@@ -198,7 +198,7 @@ main {
           -moz-transform: translateX(-1000px);
           transform: translateX(-1000px);
         }
-      }
+      } */
     /* ///////////////  */
     #gifo{
       /* position: fixed; */
