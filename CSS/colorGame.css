@@ -22,8 +22,7 @@ main {
     border-bottom: 50px;
     justify-content: center;
     margin-top: 164.8px;
-   margin-bottom: 150px;
-  
+   
     }
 
 #question{
@@ -134,7 +133,7 @@ main {
       
       
       /*Cloud: Animation*/
-      .cloud {
+      /* .cloud {
         -webkit-animation-name: cloud-movement;
         -webkit-animation-timing-function: linear;
         -webkit-animation-direction: forwards;
@@ -198,7 +197,7 @@ main {
           -moz-transform: translateX(-1000px);
           transform: translateX(-1000px);
         }
-      } */
+      } */ */
     /* ///////////////  */
     #gifo{
       /* position: fixed; */
