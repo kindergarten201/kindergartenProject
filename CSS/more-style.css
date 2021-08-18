@@ -241,7 +241,7 @@ main h3 , main h6{
 display: grid;
 grid-template-columns: 1fr 1fr 1fr ;
 gap: 90px;
-margin:20px 100px;
+margin:20px 90px;
 }
 
 .img-sec img{
