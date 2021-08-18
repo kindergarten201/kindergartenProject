@@ -31,7 +31,6 @@ for (let index = 0; index < names.length; index++) {
 }
 
 //////////////////////////////////////////// mirror section //////////////////////////////////////////////////////////
-////mirrorBtn.addEventListener('click', mirrorSecCreate);
 
 function mirrorSecCreate() {
   let check = document.getElementsByClassName('sec-1-1');
@@ -42,8 +41,6 @@ function mirrorSecCreate() {
 
     if (isOpend !== 1) {
       isOpend = 1;
-
-
       let sec2 = document.createElement('section');
       sec2.className = 'sec-1-2';
       container.appendChild(sec2);
