@@ -2,6 +2,8 @@
 let formEle = document.getElementById('Form');
 let mainEle = document.getElementById('main');
 let fieldset1 = document.getElementById('fieldset');
+document.getElementById('hid1').style.display='none';
+document.getElementById('hid').style.display='none';
 
 function Registration(f_Name, l_Name, fa_Name, ma_Name, National, Num_National, Phone,Email,Address,   Age, Gender, healthy) {
   this.f_Name = f_Name
@@ -74,7 +76,9 @@ function FormMethod(e) {
   //  localStorage.data = JSON.stringify(Registration.obj);
   localStorage.setItem('Regist', savedData)
   DeleteForm();
- 
+  document.getElementById('hid1').style.display='block';
+  document.getElementById('hid').style.display='block';
+  
   Rendertbl();
   RenderTable2();
   //rendringlist()
